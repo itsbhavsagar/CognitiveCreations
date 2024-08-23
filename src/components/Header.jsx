@@ -7,11 +7,7 @@ const Header = () => {
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap"
         rel="stylesheet"
       />
-      {/* <style>
-  * {
-  font-family: 'Source Sans Pro';
-  }
-</style> */}
+
       <div class="flex min-h-screen w-screen font-sans">
         <div class="relative my-auto mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
           <div class="mx-auto flex w-full max-w-xl lg:max-w-screen-xl">
@@ -19,7 +15,7 @@ const Header = () => {
               <div class="mb-6 max-w-xl">
                 <div>
                   <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-lime-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">
-                    Aniket
+                    Beyond Marketing Agency
                   </p>
                 </div>
                 <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">

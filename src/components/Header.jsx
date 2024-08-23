@@ -19,7 +19,7 @@ const Header = () => {
               <div class="mb-6 max-w-xl">
                 <div>
                   <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-lime-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">
-                    Beyond Marketing Agency
+                    Aniket
                   </p>
                 </div>
                 <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">

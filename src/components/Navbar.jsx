@@ -88,7 +88,7 @@ const Navbar = () => {
           <a
             href="#"
             title=""
-            class="whitespace-nowrap rounded-xl bg-lime-300  px-5 py-3 font-medium text-gray transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-sky-400"
+            class="whitespace-nowrap rounded-xl bg-lime-300  px-5 py-3 font-medium text-gray transition-all duration-200 focus:outline-none hover:bg-sky-400"
           >
             Book free consultation
           </a>

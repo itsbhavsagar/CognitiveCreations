@@ -9,9 +9,9 @@ const Header = () => {
         rel="stylesheet"
       />
 
-      <div className="relative min-h-screen w-screen font-sans  pt-6 sm:pt-32 md:pt-10">
+      <div className=" max-h-screen w-screen font-sans mt-10 pt-6 sm:pt-32 md:pt-10">
         {/* Background Image with Blur */}
-        {/* <div
+        <div
           className="absolute inset-0 -z-10"
           style={{
             backgroundImage: `url(${HeaderImage})`,
@@ -20,14 +20,14 @@ const Header = () => {
             filter: "blur(8px)", // Adjust the blur amount here
             zIndex: -10,
           }}
-        /> */}
+        />
         <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
           <div className="relative flex flex-col my-auto w-full max-w-xl lg:max-w-screen-xl">
             <div className="mb-16 lg:my-auto lg:max-w-lg">
               <div className="mb-6 max-w-xl">
                 <div>
                   <p className="bg-teal-accent-400 mb-2 inline-block rounded-full bg-lime-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">
-                    Cognitive Marketing Agency
+                    Creatorinn Digital Agency
                   </p>
                 </div>
                 <h2 className=" mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
@@ -77,7 +77,7 @@ const Header = () => {
             <div className="hidden w-56 items-center space-y-3 lg:flex">
               <div className="overflow-hidden rounded-xl bg-yellow-400">
                 <img
-                  className="h-full w-full object-fit"
+                  className="h-full w-full object-cover"
                   src={HeaderImage}
                   alt="header Image"
                 />
@@ -93,14 +93,14 @@ const Header = () => {
               </div>
               <div className="h-40 overflow-hidden rounded-xl bg-pink-600/60">
                 <img
-                  className="mx-auto h-full w-full object-fit"
+                  className="mx-auto h-full w-full object-cover"
                   src="https://img.freepik.com/free-psd/3d-rendering-recruitment-sales-background_23-2151323337.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716940800&semt=ais_user"
                   alt=""
                 />
               </div>
               <div className="h-40 overflow-hidden rounded-xl bg-blue-600/60">
                 <img
-                  className="mx-auto h-full w-full object-fit"
+                  className="mx-auto h-full w-full object-cover"
                   src="https://static.vecteezy.com/system/resources/previews/011/019/587/original/social-media-and-digital-marketing-3d-illustration-png.png"
                   alt=""
                 />

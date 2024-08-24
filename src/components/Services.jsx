@@ -12,7 +12,7 @@ const Services = () => {
     <>
       <section className="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
         <div className="mx-auto mt-20 mb-16 block px-6 text-center">
-          <h2 className="mx-auto  font-bold text-2xl lg:text-5xl ">
+          <h2 className="mx-auto  font-bold text-2xl lg:text-5xl  ">
             Your
             <span className="md:text-4xl text-2xl lg:text-5xl mx-auto bg-sky-400a mr-6 ml-6 inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring">
               {" "}

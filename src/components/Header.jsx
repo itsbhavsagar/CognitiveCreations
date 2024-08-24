@@ -21,7 +21,7 @@ const Header = () => {
             zIndex: -10,
           }}
         />
-        <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
+        <div className="relative mt-5 mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
           <div className="relative flex flex-col my-auto w-full max-w-xl lg:max-w-screen-xl">
             <div className="mb-16 lg:my-auto lg:max-w-lg">
               <div className="mb-6 max-w-xl">

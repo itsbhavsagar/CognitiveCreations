@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import FormPopup from "./FormPopup.jsx"; // Adjust the path as needed
+import Notification from "./Notification"; // Ensure you have this component
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
+  const [notification, setNotification] = useState(null);
+
 
   const handleFormOpen = () => {
     setIsFormOpen(true);
@@ -10,6 +15,15 @@ const Navbar = () => {
 
   const handleFormClose = () => {
     setIsFormOpen(false);
+  };
+
+  // Function to handle notifications
+  const handleNotification = (message, type) => {
+    setNotification({ message, type });
+    // Optionally, auto-hide the notification after a certain time
+    setTimeout(() => {
+      setNotification(null);
+    }, 3000); // Hide after 3 seconds
   };
 
   return (
@@ -91,7 +105,7 @@ const Navbar = () => {
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
                 href="#"
               >
-                Contact
+                <Link to="/contact">Contact</Link>
               </a>
             </li>
           </ul>
@@ -106,7 +120,14 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      <FormPopup isOpen={isFormOpen} onClose={handleFormClose} />
+      <FormPopup isOpen={isFormOpen} onClose={handleFormClose} onNotification={handleNotification} />
+      {notification && (
+        <Notification
+          message={notification.message}
+          type={notification.type}
+          onClose={() => setNotification(null)} // Allow manual dismissal
+        />
+      )}
     </>
   );
 };

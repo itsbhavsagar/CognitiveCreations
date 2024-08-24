@@ -1,74 +1,66 @@
+// FormPopup.js
+
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import Notification from "./Notification"; // Import the Notification component
 
-
-
-const FormPopup = ({ isOpen, onClose }) => {
+const FormPopup = ({ isOpen, onClose, onNotification }) => {
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState(""); // Phone Number
+  const [website, setWebsite] = useState(""); // Website
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [notification, setNotification] = useState(null);
 
   useEffect(() => {
     if (isOpen) {
-      // Clear notification when the form is opened
-      setNotification(null); // <-- This line clears the previous notification
+      // Optionally, reset form fields when the popup opens
+      setName("");
+      setPhone("");
+      setWebsite("");
+      setEmail("");
+      setMessage("");
     }
-  }, [isOpen]); // <-- Depend on isOpen to clear notification when form opens
-
+  }, [isOpen]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const templateParams = {
-        from_name: name,
-        from_email: email,
-        message,
-      };
-    
-      emailjs
-    .send(
-      "service_01o9szo", // Your Service ID
-      "template_2a97bdc", // Your Template ID
-      templateParams,
-      "pxKYfrMr96RheX1yd" // Your User ID
-    )
-    .then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setNotification({ message: "Email sent successfully!", type: "success" });
+      from_name: name,
+      from_phone: phone,
+      from_website: website,
+      from_email: email,
+      message,
+    };
 
-        // Delay closing the form to show the notification
-        setTimeout(() => {
-          onClose();
-        }, 2000); // Delay for 3 seconds (adjust as needed)
-        setName("");
-        setEmail("");
-        setMessage("");
-      },
-      (err) => {
-        console.log("FAILED...", err);
-        setNotification({ message: "Failed to send email. Please try again later.", type: "error" });
-
-        // Delay closing the form to show the notification
-        setTimeout(() => {
-          onClose();
-        }, 2000); // Delay for 3 seconds (adjust as needed)
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    );
-};
+    emailjs
+      .send(
+        "service_01o9szo", // Your Service ID
+        "template_s9mzj82", // Your Template ID
+        templateParams,
+        "pxKYfrMr96RheX1yd" // Your User ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          onNotification("Email sent successfully!", "success"); // Trigger success notification
+          onClose(); // Close the popup
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          onNotification("Failed to send email. Please try again later.", "error"); // Trigger error notification
+          onClose(); // Close the popup
+        }
+      );
+  };
 
   if (!isOpen) return null;
 
   return (
-    <>
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4">Book Free Consultation</h2>
         <form onSubmit={handleSubmit}>
+          {/* Name Field */}
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
             <input
@@ -79,6 +71,32 @@ const FormPopup = ({ isOpen, onClose }) => {
               required
             />
           </div>
+
+          {/* Phone Number Field */}
+          <div className="mb-4">
+            <label className="block text-gray-700">Phone Number</label>
+            <input
+              type="tel"
+              className="w-full px-3 py-2 border border-gray-300 rounded"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+
+          {/* Website Field */}
+          <div className="mb-4">
+            <label className="block text-gray-700">Website</label>
+            <input
+              type="url"
+              className="w-full px-3 py-2 border border-gray-300 rounded"
+              value={website}
+              onChange={(e) => setWebsite(e.target.value)}
+              placeholder="https://example.com"
+            />
+          </div>
+
+          {/* Email Field */}
           <div className="mb-4">
             <label className="block text-gray-700">Email</label>
             <input
@@ -89,6 +107,8 @@ const FormPopup = ({ isOpen, onClose }) => {
               required
             />
           </div>
+
+          {/* Message Field */}
           <div className="mb-4">
             <label className="block text-gray-700">Message</label>
             <textarea
@@ -98,6 +118,8 @@ const FormPopup = ({ isOpen, onClose }) => {
               required
             />
           </div>
+
+          {/* Form Buttons */}
           <div className="flex justify-end">
             <button
               type="button"
@@ -116,14 +138,6 @@ const FormPopup = ({ isOpen, onClose }) => {
         </form>
       </div>
     </div>
-    {notification && (
-      <Notification
-        message={notification.message}
-        type={notification.type}
-        onClose={() => setNotification(null)}
-      />
-    )}
-    </>
   );
 };
 

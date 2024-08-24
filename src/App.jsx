@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Services from "./components/Services";
+
+import { Outlet } from "react-router-dom";
 export default function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <Services />
+      <Outlet></Outlet>
     </>
   );
 }

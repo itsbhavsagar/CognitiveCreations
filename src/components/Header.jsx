@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderImage from "../assets/images/mb.png";
 
 const Header = () => {
   return (
@@ -8,55 +9,62 @@ const Header = () => {
         rel="stylesheet"
       />
 
-      <div class="flex min-h-screen w-screen font-sans">
-        <div class="relative my-auto mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
-          <div class="mx-auto flex w-full max-w-xl lg:max-w-screen-xl">
-            <div class="mb-16 lg:my-auto lg:max-w-lg">
-              <div class="mb-6 max-w-xl">
+      <div className="relative min-h-screen w-screen font-sans  pt-6 sm:pt-32 md:pt-10">
+        {/* Background Image with Blur */}
+        {/* <div
+          className="absolute inset-0 -z-10"
+          style={{
+            backgroundImage: `url(${HeaderImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(8px)", // Adjust the blur amount here
+            zIndex: -10,
+          }}
+        /> */}
+        <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
+          <div className="relative flex flex-col my-auto w-full max-w-xl lg:max-w-screen-xl">
+            <div className="mb-16 lg:my-auto lg:max-w-lg">
+              <div className="mb-6 max-w-xl">
                 <div>
-                  <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-lime-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">
+                  <p className="bg-teal-accent-400 mb-2 inline-block rounded-full bg-lime-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">
                     Cognitive Marketing Agency
                   </p>
                 </div>
-                <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
-                  We drive growth to <br />
-                  your business
+                <h2 className=" mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
+                  You Are Offline <br />
+                  Unlock Your Digital
                   <br />
-                  <span class="rounded- abg-gradient-to-r inline-block bg-sky-400 from-lime-400 to-sky-400 px-2 font-bold text-white">
-                    Cognitive Creations
+                  <span className="bg-gradient-to-r inline-block from-lime-400 to-sky-400 px-2 font-bold text-white">
+                    PRESENCE
                   </span>
                 </h2>
-                <p class="text-base text-gray-700 md:text-lg">
-                  we specialize in transforming your vision into reality. Our
-                  expert team of marketers, designers, and strategists crafts
-                  bespoke solutions tailored to elevate your brand, drive
-                  engagement, and maximize growth. Discover the difference with
-                  our data-driven strategies and creative campaigns that capture
-                  attention and deliver results.
+                <p className="text-base text-gray-700 md:text-lg">
+                  Find Out How Our Scale, Scope And Knowledge Allow Us To Help
+                  Build Capabilities And Leadership At Every Level And
+                  Opportunity.
                 </p>
               </div>
-              <div class="flex items-center">
+              <div className="flex flex-col items-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row">
                 <a
                   href="/"
-                  class="bg-sky-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring"
+                  className="bg-sky-400 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring"
                 >
-                  {" "}
-                  Get started{" "}
+                  Get started
                 </a>
                 <a
                   href="/"
-                  class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-lime-400"
+                  className="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-lime-400"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="mr-2 h-6 w-6"
+                    className="mr-2 h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                   Watch Videos
@@ -65,34 +73,34 @@ const Header = () => {
             </div>
           </div>
 
-          <div class="flex h-full w-full space-x-3 overflow-hidden md:justify-end">
-            <div class="hidden w-56 items-center space-y-3 lg:flex">
-              <div class="overflow-hidden rounded-xl bg-yellow-400">
+          <div className="flex w-full flex-col space-y-3 overflow-hidden md:space-y-0 md:space-x-3 md:flex-row">
+            <div className="hidden w-56 items-center space-y-3 lg:flex">
+              <div className="overflow-hidden rounded-xl bg-yellow-400">
                 <img
-                  class="h-full w-full object-cover"
-                  src="https://www.wheelermarketingagency.com/wp-content/uploads/2023/10/Instagram-for-Business-819x1024.png"
-                  alt=""
+                  className="h-full w-full object-fit"
+                  src={HeaderImage}
+                  alt="header Image"
                 />
               </div>
             </div>
-            <div class="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
-              <div class="h-40 overflow-hidden rounded-xl bg-green-600/60">
+            <div className="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
+              <div className="h-40 overflow-hidden rounded-xl bg-green-600/60">
                 <img
-                  class="mx-auto h-full w-full object-cover"
+                  className="mx-auto h-full w-full object-cover"
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/digital-marketing-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--analytics-logo-business-growth-illustrations-2426540.png?f=webp"
                   alt=""
                 />
               </div>
-              <div class="h-40 overflow-hidden rounded-xl bg-pink-600/60">
+              <div className="h-40 overflow-hidden rounded-xl bg-pink-600/60">
                 <img
-                  class="mx-auto h-full w-full object-cover"
+                  className="mx-auto h-full w-full object-fit"
                   src="https://img.freepik.com/free-psd/3d-rendering-recruitment-sales-background_23-2151323337.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716940800&semt=ais_user"
                   alt=""
                 />
               </div>
-              <div class="h-40 overflow-hidden rounded-xl bg-blue-600/60">
+              <div className="h-40 overflow-hidden rounded-xl bg-blue-600/60">
                 <img
-                  class="mx-auto h-full w-full object-cover"
+                  className="mx-auto h-full w-full object-fit"
                   src="https://static.vecteezy.com/system/resources/previews/011/019/587/original/social-media-and-digital-marketing-3d-illustration-png.png"
                   alt=""
                 />

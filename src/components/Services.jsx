@@ -1,5 +1,12 @@
 import React from "react";
 import { ImYoutube2 } from "react-icons/im";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebook,
+  FaLinkedin,
+  FaGoogle,
+} from "react-icons/fa";
 const Services = () => {
   return (
     <>
@@ -43,9 +50,10 @@ const Services = () => {
         <div class="grid gap-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-20 items-center justify-center rounded-lg border bg-blue-50 text-4xl text-red-500">
+              <div className="mr-4 flex h-12 w-20 items-center justify-center rounded-lg border bg-red-600 text-4xl text-white">
                 <ImYoutube2 />
               </div>
+
               <h3 class="text-2xl font-bold md:text-xl">YouTube</h3>
             </div>
             <p class="text-gray-700">
@@ -58,127 +66,81 @@ const Services = () => {
           </div>
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="0.85em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 27 32"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M17.5 1a.5.5 0 0 0 0-1h-9a.5.5 0 0 0 0 1h9zM.99 27.635c-1.074 1.511-.954 2.498-.664 3.06C.633 31.29 1.433 32 3.5 32h20c2.067 0 2.867-.71 3.174-1.306c.29-.562.41-1.549-.648-3.034l-6.219-9.95l-.088-.124C19.272 16.948 17 13.022 17 9.75V2.5a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5v7.25c0 3.491-2.465 7.957-2.493 8.005L.99 27.635zm24.796 2.6c-.251.487-1.084.765-2.286.765h-20c-1.202 0-2.035-.278-2.286-.765c-.229-.444-.02-1.162.62-2.066l4.999-8.948l.007.004c.91.525 1.851 1.068 3.719 1.068s2.81-.542 3.719-1.066c.833-.48 1.619-.934 3.22-.934c.607 0 1.133.075 1.617.21l6.08 9.712c.611.858.82 1.576.591 2.02zM10 9.75V3h6v6.75c0 2.84 1.516 6.042 2.404 7.602a7.862 7.862 0 0 0-.905-.059c-1.869 0-2.81.542-3.719 1.066c-.833.48-1.619.934-3.22.934c-1.601 0-2.387-.454-3.219-.934l-.019-.011l.046-.082C7.393 18.226 10 13.58 10 9.75z"
-                  />
-                </svg>
+              <div className="mr-4 flex h-12 w-16 items-center justify-center rounded-lg border bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-4xl text-white">
+                <FaInstagram />
               </div>
-              <h3 class="text-2xl font-bold md:text-xl">Performant</h3>
+
+              <h3 class="text-2xl font-bold md:text-xl">Instagram</h3>
             </div>
             <p class="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-              repellendus.
+              At Cognitive Creations, we create content that captures attention
+              and drives engagement. From stunning visuals to creative
+              campaigns, we make sure your brand shines on Instagram. Let us
+              handle the strategy while you connect with your audience.
             </p>
           </div>
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="0.85em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 27 32"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M17.5 1a.5.5 0 0 0 0-1h-9a.5.5 0 0 0 0 1h9zM.99 27.635c-1.074 1.511-.954 2.498-.664 3.06C.633 31.29 1.433 32 3.5 32h20c2.067 0 2.867-.71 3.174-1.306c.29-.562.41-1.549-.648-3.034l-6.219-9.95l-.088-.124C19.272 16.948 17 13.022 17 9.75V2.5a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5v7.25c0 3.491-2.465 7.957-2.493 8.005L.99 27.635zm24.796 2.6c-.251.487-1.084.765-2.286.765h-20c-1.202 0-2.035-.278-2.286-.765c-.229-.444-.02-1.162.62-2.066l4.999-8.948l.007.004c.91.525 1.851 1.068 3.719 1.068s2.81-.542 3.719-1.066c.833-.48 1.619-.934 3.22-.934c.607 0 1.133.075 1.617.21l6.08 9.712c.611.858.82 1.576.591 2.02zM10 9.75V3h6v6.75c0 2.84 1.516 6.042 2.404 7.602a7.862 7.862 0 0 0-.905-.059c-1.869 0-2.81.542-3.719 1.066c-.833.48-1.619.934-3.22.934c-1.601 0-2.387-.454-3.219-.934l-.019-.011l.046-.082C7.393 18.226 10 13.58 10 9.75z"
-                  />
-                </svg>
+              <div className="mr-4 flex h-12 w-16 items-center justify-center rounded-lg border bg-gradient-to-br from-blue-400 to-blue-600 text-4xl text-white">
+                <FaTwitter />
               </div>
-              <h3 class="text-2xl font-bold md:text-xl">Analytical</h3>
+
+              <h3 class="text-2xl font-bold md:text-xl">Twitter</h3>
             </div>
             <p class="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-              repellendus.
+              At Cognitive Creations, we craft impactful tweets and engaging
+              content that elevate your brand on Twitter. From trending hashtags
+              to creative campaigns, we help you connect with your audience and
+              drive meaningful conversations. Let us manage your Twitter
+              presence while you focus on your business.
             </p>
           </div>
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="0.85em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 27 32"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M17.5 1a.5.5 0 0 0 0-1h-9a.5.5 0 0 0 0 1h9zM.99 27.635c-1.074 1.511-.954 2.498-.664 3.06C.633 31.29 1.433 32 3.5 32h20c2.067 0 2.867-.71 3.174-1.306c.29-.562.41-1.549-.648-3.034l-6.219-9.95l-.088-.124C19.272 16.948 17 13.022 17 9.75V2.5a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5v7.25c0 3.491-2.465 7.957-2.493 8.005L.99 27.635zm24.796 2.6c-.251.487-1.084.765-2.286.765h-20c-1.202 0-2.035-.278-2.286-.765c-.229-.444-.02-1.162.62-2.066l4.999-8.948l.007.004c.91.525 1.851 1.068 3.719 1.068s2.81-.542 3.719-1.066c.833-.48 1.619-.934 3.22-.934c.607 0 1.133.075 1.617.21l6.08 9.712c.611.858.82 1.576.591 2.02zM10 9.75V3h6v6.75c0 2.84 1.516 6.042 2.404 7.602a7.862 7.862 0 0 0-.905-.059c-1.869 0-2.81.542-3.719 1.066c-.833.48-1.619.934-3.22.934c-1.601 0-2.387-.454-3.219-.934l-.019-.011l.046-.082C7.393 18.226 10 13.58 10 9.75z"
-                  />
-                </svg>
+              <div className="mr-4 flex h-12 w-16 items-center justify-center rounded-lg border bg-gradient-to-br from-blue-600 to-blue-800 text-4xl text-white">
+                <FaFacebook />
               </div>
-              <h3 class="text-2xl font-bold md:text-xl">Enhanced</h3>
+
+              <h3 class="text-2xl font-bold md:text-xl">Facebook</h3>
             </div>
             <p class="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-              repellendus.
+              At Cognitive Creations, we help your brand connect with millions
+              on Facebook. From targeted ads to engaging posts, we create
+              content that boosts visibility and drives interaction. Let us
+              manage your Facebook presence while you focus on growing your
+              business.
             </p>
           </div>
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="0.85em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 27 32"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M17.5 1a.5.5 0 0 0 0-1h-9a.5.5 0 0 0 0 1h9zM.99 27.635c-1.074 1.511-.954 2.498-.664 3.06C.633 31.29 1.433 32 3.5 32h20c2.067 0 2.867-.71 3.174-1.306c.29-.562.41-1.549-.648-3.034l-6.219-9.95l-.088-.124C19.272 16.948 17 13.022 17 9.75V2.5a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5v7.25c0 3.491-2.465 7.957-2.493 8.005L.99 27.635zm24.796 2.6c-.251.487-1.084.765-2.286.765h-20c-1.202 0-2.035-.278-2.286-.765c-.229-.444-.02-1.162.62-2.066l4.999-8.948l.007.004c.91.525 1.851 1.068 3.719 1.068s2.81-.542 3.719-1.066c.833-.48 1.619-.934 3.22-.934c.607 0 1.133.075 1.617.21l6.08 9.712c.611.858.82 1.576.591 2.02zM10 9.75V3h6v6.75c0 2.84 1.516 6.042 2.404 7.602a7.862 7.862 0 0 0-.905-.059c-1.869 0-2.81.542-3.719 1.066c-.833.48-1.619.934-3.22.934c-1.601 0-2.387-.454-3.219-.934l-.019-.011l.046-.082C7.393 18.226 10 13.58 10 9.75z"
-                  />
-                </svg>
+              <div className="mr-4 flex h-12 w-16 items-center justify-center rounded-lg border bg-gradient-to-br from-blue-700 to-blue-900 text-4xl text-white">
+                <FaLinkedin />
               </div>
-              <h3 class="text-2xl font-bold md:text-xl">Performant</h3>
+
+              <h3 class="text-2xl font-bold md:text-xl">LinkedIn</h3>
             </div>
             <p class="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-              repellendus.
+              At Cognitive Creations, we enhance your brand’s professional image
+              on LinkedIn. From strategic posts to targeted networking, we craft
+              content that builds connections and drives business growth. Let us
+              manage your LinkedIn strategy while you focus on your industry
+              leadership.
             </p>
           </div>
           <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
             <div class="my-4 flex items-center">
-              <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="0.85em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 27 32"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M17.5 1a.5.5 0 0 0 0-1h-9a.5.5 0 0 0 0 1h9zM.99 27.635c-1.074 1.511-.954 2.498-.664 3.06C.633 31.29 1.433 32 3.5 32h20c2.067 0 2.867-.71 3.174-1.306c.29-.562.41-1.549-.648-3.034l-6.219-9.95l-.088-.124C19.272 16.948 17 13.022 17 9.75V2.5a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5v7.25c0 3.491-2.465 7.957-2.493 8.005L.99 27.635zm24.796 2.6c-.251.487-1.084.765-2.286.765h-20c-1.202 0-2.035-.278-2.286-.765c-.229-.444-.02-1.162.62-2.066l4.999-8.948l.007.004c.91.525 1.851 1.068 3.719 1.068s2.81-.542 3.719-1.066c.833-.48 1.619-.934 3.22-.934c.607 0 1.133.075 1.617.21l6.08 9.712c.611.858.82 1.576.591 2.02zM10 9.75V3h6v6.75c0 2.84 1.516 6.042 2.404 7.602a7.862 7.862 0 0 0-.905-.059c-1.869 0-2.81.542-3.719 1.066c-.833.48-1.619.934-3.22.934c-1.601 0-2.387-.454-3.219-.934l-.019-.011l.046-.082C7.393 18.226 10 13.58 10 9.75z"
-                  />
-                </svg>
+              <div className="mr-4 flex h-12 w-16 items-center justify-center rounded-lg border bg-gradient-to-br from-blue-500 to-orange-500 text-4xl text-white">
+                <FaGoogle />
               </div>
-              <h3 class="text-2xl font-bold md:text-xl">Analytical</h3>
+
+              <h3 class="text-2xl font-bold md:text-xl">Google My Business</h3>
             </div>
             <p class="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-              repellendus.
+              At Cognitive Creations, we optimize your Google My Business
+              profile to boost local visibility and attract more customers. From
+              managing reviews to enhancing your listing, we ensure your
+              business stands out in local searches. Let us handle your Google
+              My Business presence while you grow your customer base.
             </p>
           </div>
         </div>

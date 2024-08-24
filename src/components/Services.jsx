@@ -10,7 +10,7 @@ import {
 const Services = () => {
   return (
     <>
-      <section class="mx-auto px-6 -mt-20 text-gray-800 md:max-w-screen-xl">
+      <section class="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
         <div class="mx-auto mt-20 mb-16 block px-6 text-center">
           <h2 class="mx-auto  font-bold text-2xl lg:text-5xl ">
             Your

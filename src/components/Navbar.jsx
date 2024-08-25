@@ -70,13 +70,13 @@ const Navbar = () => {
           </svg>
         </label>
         <nav
-          aria-label="Header Navigation"
+          aria-label="Header Navigation "
           className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row"
         >
           <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li className="lg:mr-12">
               <a
-                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2  hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Services
@@ -84,7 +84,7 @@ const Navbar = () => {
             </li>
             <li className="lg:mr-12">
               <a
-                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Work
@@ -92,7 +92,7 @@ const Navbar = () => {
             </li>
             <li className="lg:mr-12">
               <a
-                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Team
@@ -100,7 +100,7 @@ const Navbar = () => {
             </li>
             <li className="lg:mr-12">
               <a
-                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 <Link to="/contact">Contact</Link>

@@ -10,60 +10,60 @@ const Header = () => {
           src="https://cdn.pixabay.com/photo/2022/01/11/17/04/city-6931092_640.jpg"
           alt=""
         /> */}
-        <div class="mx-auto h-full px-4 py-28 md:py-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-          <div class="flex flex-col items-center justify-between lg:flex-row">
-            <div class="">
-              <div class="lg:max-w-xl lg:pr-5">
-                <p class="flex text-sm uppercase text-orange-600">
+        <div className="mx-auto h-full px-4 py-28 md:py-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+          <div className="flex flex-col items-center justify-between lg:flex-row">
+            <div className="">
+              <div className="lg:max-w-xl lg:pr-5">
+                <p className="flex text-sm uppercase text-orange-600">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="mr-1 inline h-5 w-5"
+                    className="mr-1 inline h-5 w-5"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                   An A.I marketing agency for high growth startups
                 </p>
 
-                <h2 class="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 sm:text-7xl sm:leading-snug">
+                <h2 className="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 sm:text-7xl sm:leading-snug">
                   We make you <br /> look{" "}
-                  <span class="my-1 inline-block border-b-8 border-orange-400 bg-lime-300 px-4 font-bold text-gray-500">
+                  <span className="my-1 inline-block border-b-8 border-orange-400 bg-lime-300 px-4 font-bold text-gray-500">
                     different
                   </span>
                 </h2>
-                <p class="text-base text-gray-500">
+                <p className="text-base text-gray-500">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque it.
                 </p>
               </div>
-              <div class="mt-10 flex flex-col items-center md:flex-row">
+              <div className="mt-10 flex flex-col items-center md:flex-row">
                 {/* <a
                   href="/"
-                  class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-gradient-to-r from-green-400 to-blue-500 px-6 font-medium tracking-wide text-white shadow-md md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800 transition duration-200 hover:scale-110"
+                  className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-gradient-to-r from-green-400 to-blue-500 px-6 font-medium tracking-wide text-white shadow-md md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800 transition duration-200 hover:scale-110"
                 >
                   Request A Quote{" "}
                 </a> */}{" "}
                 <a
                   href="#"
-                  class="my-10 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
+                  className="my-10 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
                 >
                   Request a Quote{" "}
                 </a>{" "}
                 <a
                   href="/"
                   aria-label=""
-                  class="group inline-flex items-center font-semibold text-gray-600 ml-3"
+                  className="group inline-flex items-center font-semibold text-gray-600 ml-3"
                 >
                   {" "}
                   Watch how it works
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="group-hover:translate-x-2 ml-4 h-6 w-6 transition-transform"
+                    className="group-hover:translate-x-2 ml-4 h-6 w-6 transition-transform"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -79,19 +79,19 @@ const Header = () => {
               </div>
             </div>
 
-            <div class="relative hidden h-full w-full items-center justify-center lg:flex lg:w-1/2">
-              <div class="absolute z-1 lg:left-0">
-                <div class="flex items-center rounded-md border border-gray-100 bg-white px-4 py-3 shadow-lg">
+            <div className="relative hidden h-full w-full items-center justify-center lg:flex lg:w-1/2">
+              <div className="absolute z-1 lg:left-0">
+                <div className="flex items-center rounded-md border border-gray-100 bg-white px-4 py-3 shadow-lg">
                   <img
-                    class="h-10 w-10 rounded-full object-cover"
+                    className="h-10 w-10 rounded-full object-cover"
                     src="/images/oPf2b7fqx5xa3mo68dYHo.png"
                     alt="Simon Lewis"
                   />
-                  <p class="ml-4 w-56">
-                    <strong class="block text-lg font-medium">
+                  <p className="ml-4 w-56">
+                    <strong className="block text-lg font-medium">
                       Simon Lewis
                     </strong>
-                    <span class="text-xs text-gray-400">
+                    <span className="text-xs text-gray-400">
                       {" "}
                       Has been our client for 4 years{" "}
                     </span>
@@ -101,7 +101,7 @@ const Header = () => {
                 <svg
                   viewBox="0 0 52 24"
                   fill="currentColor"
-                  class="absolute top-0 left-0 z-0 -mt-8 -ml-20 hidden w-32 text-emerald-600/30 sm:block lg:-ml-28 lg:-mt-10 lg:w-32"
+                  className="absolute top-0 left-0 z-0 -mt-8 -ml-20 hidden w-32 text-emerald-600/30 sm:block lg:-ml-28 lg:-mt-10 lg:w-32"
                 >
                   <defs>
                     <pattern
@@ -122,7 +122,7 @@ const Header = () => {
                 </svg>
 
                 {/* SVG ICON FOR LOOK ENDS */}
-                <div class="h-56 w-56 text-amber-600 absolute -z-10 left-20 top-20">
+                <div className="h-56 w-56 text-amber-600 absolute -z-10 left-20 top-20">
                   <svg
                     id="patternId"
                     width="100%"
@@ -178,28 +178,28 @@ const Header = () => {
                     />
                   </svg>
                 </div>
-                <div class="mt-2 flex flex-col items-start rounded-md border border-gray-100 bg-white px-4 pt-3 pb-6 shadow-lg">
-                  <strong class="block text-lg font-medium">
+                <div className="mt-2 flex flex-col items-start rounded-md border border-gray-100 bg-white px-4 pt-3 pb-6 shadow-lg">
+                  <strong className="block text-lg font-medium">
                     Site Analytics
                   </strong>
-                  <div class="mt-4 flex items-center text-xs text-gray-400">
+                  <div className="mt-4 flex items-center text-xs text-gray-400">
                     Impressions
-                    <div class="ml-4 h-4 w-56 overflow-hidden rounded-md bg-gray-100">
-                      <div class="h-full w-3/5 bg-yellow-200"></div>
+                    <div className="ml-4 h-4 w-56 overflow-hidden rounded-md bg-gray-100">
+                      <div className="h-full w-3/5 bg-yellow-200"></div>
                     </div>
                   </div>
 
-                  <div class="mt-4 flex items-center text-xs text-gray-400">
+                  <div className="mt-4 flex items-center text-xs text-gray-400">
                     Engagement
-                    <div class="ml-4 h-4 w-56 overflow-hidden rounded-md bg-gray-100">
-                      <div class="h-full w-2/5 bg-gray-800"></div>
+                    <div className="ml-4 h-4 w-56 overflow-hidden rounded-md bg-gray-100">
+                      <div className="h-full w-2/5 bg-gray-800"></div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <img
-                class="-scale-x-100 mt-auto ml-96 h-4/6 object-cover lg:max-w-2xl"
+                className="-scale-x-100 mt-auto ml-96 h-4/6 object-cover lg:max-w-2xl"
                 src="https://componentland.com/images/Rmq5nOvVkRXcJ4l-MnTfN.png"
                 alt="glasses photo"
               />

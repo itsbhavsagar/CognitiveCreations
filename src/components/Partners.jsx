@@ -1,5 +1,4 @@
 import React from "react";
-// src/main.jsx or src/index.jsx
 
 // Dynamically import all logos
 const logos = import.meta.glob("/src/assets/images/partner_logos/*.png", {
@@ -14,8 +13,20 @@ const generateLogos = () => {
   }));
 };
 
+// Shuffle function for randomizing array
+const shuffleArray = (array) => {
+  let shuffled = array.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 const Partners = () => {
   const partners = generateLogos();
+  const shuffledPartners1 = shuffleArray(partners);
+  const shuffledPartners2 = shuffleArray(partners);
 
   return (
     <section className="py-12 bg-gray-100 overflow-hidden">
@@ -26,12 +37,16 @@ const Partners = () => {
         </p>
 
         {/* Right to Left Scrolling Logos */}
-        <div className="relative mb-4">
+        <div className="relative mb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-100 pointer-events-none"></div>
-          <div className="flex overflow-hidden relative">
-            <div className="flex animate-scroll-left whitespace-nowrap">
-              {partners.concat(partners).map((partner, index) => (
-                <div key={index} className="inline-block w-20 mx-4">
+          <div className="flex whitespace-nowrap animate-scroll-left">
+            {shuffledPartners1
+              .concat(shuffledPartners1)
+              .map((partner, index) => (
+                <div
+                  key={index}
+                  className="inline-block w-20 flex-shrink-0 mx-4"
+                >
                   <img
                     src={partner.src}
                     alt={partner.alt}
@@ -40,17 +55,20 @@ const Partners = () => {
                   />
                 </div>
               ))}
-            </div>
           </div>
         </div>
 
         {/* Left to Right Scrolling Logos */}
-        <div className="relative">
+        {/* <div className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-gray-100 pointer-events-none"></div>
-          <div className="flex overflow-hidden relative">
-            <div className="flex animate-scroll-right whitespace-nowrap">
-              {partners.concat(partners).map((partner, index) => (
-                <div key={index} className="inline-block w-20 mx-4">
+          <div className="flex whitespace-nowrap animate-scroll-right">
+            {shuffledPartners2
+              .concat(shuffledPartners2)
+              .map((partner, index) => (
+                <div
+                  key={index}
+                  className="inline-block w-20 flex-shrink-0 mx-4"
+                >
                   <img
                     src={partner.src}
                     alt={partner.alt}
@@ -59,9 +77,8 @@ const Partners = () => {
                   />
                 </div>
               ))}
-            </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

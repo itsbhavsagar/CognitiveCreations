@@ -9,13 +9,13 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
         scrollRight: {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
         },
       },
       animation: {
-        "scroll-left": "scrollLeft 40s linear infinite",
-        "scroll-right": "scrollRight 40s linear infinite",
+        "scroll-left": "scrollLeft 20s linear infinite",
+        "scroll-right": "scrollRight 20s linear infinite",
       },
     },
   },

@@ -82,54 +82,56 @@ const Services = () => {
   ];
 
   return (
-    <section className="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
-      {/* Section header */}
-      <div className="mx-auto mt-10 mb-16 block px-6 text-center">
-        <h2 className="mx-auto font-bold text-2xl lg:text-5xl">
-          Your
-          {/* Highlighted text */}
-          <span className="md:text-4xl text-2xl lg:text-5xl mx-auto bg-sky-400a mr-6 ml-6 inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring">
-            {" "}
-            Digital Future{" "}
-          </span>
-          is Here
-        </h2>
-        {/* Section description */}
-        <div className="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-gray-700 md:w-3/4 xl:w-3/4">
-          <p className="text-lg">
-            At Cognitive Creations, we bridge the gap between vision and
-            reality. Our expert team harnesses the power of cutting-edge
-            technology, AI, and creative strategies to build digital solutions
-            that propel your brand into the future. Whether it's innovative
-            apps, dynamic websites, or impactful marketing campaigns, we're here
-            to transform your ideas into tangible success.
-          </p>
+    <>
+      <section className="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
+        {/* Section header */}
+        <div className="mx-auto mt-10 mb-16 block px-6 text-center">
+          <h2 className="mx-auto font-bold text-2xl lg:text-5xl">
+            Your
+            {/* Highlighted text */}
+            <span className="md:text-4xl text-2xl lg:text-5xl mx-auto bg-sky-400a mr-6 ml-6 inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring">
+              {" "}
+              Digital Future{" "}
+            </span>
+            is Here
+          </h2>
+          {/* Section description */}
+          <div className="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-gray-700 md:w-3/4 xl:w-3/4">
+            <p className="text-lg">
+              At Cognitive Creations, we bridge the gap between vision and
+              reality. Our expert team harnesses the power of cutting-edge
+              technology, AI, and creative strategies to build digital solutions
+              that propel your brand into the future. Whether it's innovative
+              apps, dynamic websites, or impactful marketing campaigns, we're
+              here to transform your ideas into tangible success.
+            </p>
+          </div>
+          {/* Call to Action buttons */}
+          <div className="mt-8 text-center">
+            <a
+              className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
+              href="#"
+              target="_blank"
+            >
+              Get Started
+            </a>
+            <a
+              className="mx-2 mb-2 inline-block rounded bg-lime-300 px-6 py-2 text-xl font-medium text-black shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
+              href="#"
+            >
+              Book a Demo
+            </a>
+          </div>
         </div>
-        {/* Call to Action buttons */}
-        <div className="mt-8 text-center">
-          <a
-            className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
-            href="#"
-            target="_blank"
-          >
-            Get Started
-          </a>
-          <a
-            className="mx-2 mb-2 inline-block rounded bg-lime-300 px-6 py-2 text-xl font-medium text-black shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
-            href="#"
-          >
-            Book a Demo
-          </a>
+        {/* Service Cards Grid */}
+        <div className="grid gap-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Map through services array and render a ServiceCard for each */}
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
         </div>
-      </div>
-      {/* Service Cards Grid */}
-      <div className="grid gap-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
-        {/* Map through services array and render a ServiceCard for each */}
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
-        ))}
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

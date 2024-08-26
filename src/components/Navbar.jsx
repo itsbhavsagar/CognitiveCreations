@@ -32,7 +32,7 @@ const Navbar = () => {
           href="#"
           className="flex items-center whitespace-nowrap text-2xl font-black"
         >
-          <span className="mr-2 text-4xl text-lime-400">
+          <span className="mr-2 text-4xl text-lime-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -116,7 +116,7 @@ const Navbar = () => {
           <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
             <button
               onClick={handleFormOpen}
-              className="whitespace-nowrap rounded-xl bg-lime-300  px-5 py-3 font-medium text-gray transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-sky-400"
+              className="whitespace-nowrap rounded-xl bg-lime-300  px-5 py-3 font-medium text-gray-700 transition-all duration-200 focus:outline-none hover:bg-orange-400 hover:text-white"
             >
               Book free consultation
             </button>

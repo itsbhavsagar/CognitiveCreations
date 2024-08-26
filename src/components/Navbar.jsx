@@ -116,7 +116,7 @@ const Navbar = () => {
           <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
             <button
               onClick={handleFormOpen}
-              className="whitespace-nowrap rounded-xl bg-lime-300  px-5 py-3 font-medium text-gray-700 transition-all duration-200 focus:outline-none hover:bg-orange-400 hover:text-white"
+              className="whitespace-nowrap rounded bg-gray-700 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none"
             >
               Book free consultation
             </button>

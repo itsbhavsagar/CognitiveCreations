@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderImage from "../assets/images/header3.jpg";
+import HeaderImage from "../assets/images/header4.jpg";
 import HeaderImages from "../assets/images/header2.jpg";
 
 const Header = () => {
@@ -76,11 +76,11 @@ const Header = () => {
           </div>
 
           <div className="flex w-full flex-col space-y-3 overflow-hidden md:space-y-0 md:space-x-3 md:flex-row">
-            <div className="hidden w-56 items-center space-y-3 lg:flex">
-              <div className="overflow-hidden rounded-xl bg-yellow-400">
+            <div className="hidden w-96 items-center space-y-3 lg:flex">
+              <div className="overflow-hidden rounded-xl bg-white-400">
                 <img
                   className="h-full w-full object-cover"
-                  src={HeaderImages}
+                  src="https://lh3.googleusercontent.com/proxy/QP49FmJQOP01IUhCvpkFcYkwW6tRG92h2_nfw9E6Xcmo0sj6JSEY1rQYwxb6q7Su5kDArRqtVZ5xhdhaj8bMeKGp5SXuD7s31Qk8Lc55xyDyd4ijxWSe5cPQSc840Yw"
                   alt="header Image"
                 />
               </div>
@@ -88,22 +88,22 @@ const Header = () => {
             <div className="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
               <div className="h-40 overflow-hidden rounded-xl bg-green-600/60">
                 <img
-                  className="mx-auto h-full w-full object-fit"
-                  src={HeaderImage}
+                  className="mx-auto h-full w-full object-cover"
+                  src="https://business.adobe.com/blog/basics/media_1989cc7d902aa64ab900604ff44f877f8eae74ac4.png?width=750&format=png&optimize=medium"
                   alt=""
                 />
               </div>
               <div className="h-40 overflow-hidden rounded-xl bg-pink-600/60">
                 <img
                   className="mx-auto h-full w-full object-cover"
-                  src={HeaderImage}
+                  src="https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063134.jpg"
                   alt=""
                 />
               </div>
               <div className="h-40 overflow-hidden rounded-xl bg-blue-600/60">
                 <img
                   className="mx-auto h-full w-full object-cover"
-                  src={HeaderImages}
+                  src="https://business.adobe.com/blog/basics/media_1f8581118e3ecac00076b129664cc7ece3dd20009.png?width=750&format=png&optimize=medium"
                   alt=""
                 />
               </div>

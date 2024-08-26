@@ -5,4 +5,7 @@ export default {
     extend: {},
   },
   plugins: [],
+  colors: {
+    PrimaryGreen: "rgb(60, 225, 125)",
+  },
 };

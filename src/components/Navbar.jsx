@@ -27,7 +27,8 @@ const Navbar = () => {
   return (
     <>
       <header className=" bg-white text-slate-700 w-screen fixed top-0 z-10 mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center shadow-md">
-        <a
+        <Link
+          to={"/"}
           href="#"
           className="flex items-center whitespace-nowrap text-2xl font-black"
         >
@@ -48,7 +49,7 @@ const Navbar = () => {
             </svg>
           </span>
           Creatorinn
-        </a>
+        </Link>
         <input type="checkbox" className="peer hidden" id="navbar-open" />
         <label
           className="absolute top-5 right-5 cursor-pointer lg:hidden"
@@ -75,36 +76,40 @@ const Navbar = () => {
         >
           <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li className="lg:mr-12">
-              <a
+              <Link
+                to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2  hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="lg:mr-12">
-              <a
+              <Link
+                to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Work
-              </a>
+              </Link>
             </li>
             <li className="lg:mr-12">
-              <a
+              <Link
+                to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 Team
-              </a>
+              </Link>
             </li>
             <li className="lg:mr-12">
-              <a
+              <Link
+                to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 href="#"
               >
                 <Link to="/contact">Contact</Link>
-              </a>
+              </Link>
             </li>
           </ul>
           <hr className="mt-4 w-full lg:hidden" />

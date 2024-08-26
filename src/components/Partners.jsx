@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../animation.css";
 
 // Dynamically import all logos
 const logos = import.meta.glob("/src/assets/images/partner_logos/*.png", {
@@ -15,7 +16,7 @@ const generateLogos = () => {
 
 // Shuffle function for randomizing array
 const shuffleArray = (array) => {
-  let shuffled = array.slice();
+  const shuffled = array.slice();
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -23,62 +24,103 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
+// Formatting function to add commas to numbers
+const formatNumber = (number) => {
+  return number.toLocaleString();
+};
+
 const Partners = () => {
   const partners = generateLogos();
-  const shuffledPartners1 = shuffleArray(partners);
-  const shuffledPartners2 = shuffleArray(partners);
+  const shuffledPartners = shuffleArray(partners);
+  const totalPartners = partners.length; // Get the actual number of partners
+
+  // Dynamic counts
+  const [businessCount, setBusinessCount] = useState(0);
+  const [partnerCount, setPartnerCount] = useState(0);
+
+  useEffect(() => {
+    // Business Count Animation
+    const targetBusinessCount = 100; // or any number you'd like
+    const businessDuration = 2000; // duration in milliseconds
+    const businessIncrement = Math.ceil(
+      targetBusinessCount / (businessDuration / 50)
+    );
+
+    const businessCounter = setInterval(() => {
+      setBusinessCount((prev) => {
+        if (prev + businessIncrement >= targetBusinessCount) {
+          clearInterval(businessCounter);
+          return targetBusinessCount;
+        }
+        return prev + businessIncrement;
+      });
+    }, 50);
+
+    // Partner Count Animation
+    const targetPartnerCount = totalPartners; // Use the actual number of partners
+    const partnerDuration = 2000; // duration in milliseconds
+    const partnerIncrement = Math.ceil(
+      targetPartnerCount / (partnerDuration / 50)
+    );
+
+    const partnerCounter = setInterval(() => {
+      setPartnerCount((prev) => {
+        if (prev + partnerIncrement >= targetPartnerCount) {
+          clearInterval(partnerCounter);
+          return targetPartnerCount;
+        }
+        return prev + partnerIncrement;
+      });
+    }, 50);
+
+    // Cleanup intervals on component unmount
+    return () => {
+      clearInterval(businessCounter);
+      clearInterval(partnerCounter);
+    };
+  }, [totalPartners]);
 
   return (
-    <section className="py-12 bg-gray-100 overflow-hidden">
+    <section className="py-16 bg-gray-100 overflow-hidden">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6">Our Partners</h2>
-        <p className="text-lg mb-12 text-gray-700">
-          We proudly collaborate with these esteemed companies.
+        <h2 className="text-4xl font-extrabold mb-6 text-gray-700">
+          Our Partners
+        </h2>
+        <p className="text-lg mb-10 text-gray-700">
+          Empowering{" "}
+          <span className="font-bold text-orange-600">
+            {formatNumber(businessCount)}+
+          </span>{" "}
+          brands with{" "}
+          <span className="font-bold text-orange-600">cutting-edge</span>{" "}
+          digital marketing strategies, across in partnership with{" "}
+          <span className="font-bold text-orange-600">
+            {formatNumber(partnerCount)}+
+          </span>{" "}
+          industry leaders driving global success.
         </p>
 
-        {/* Right to Left Scrolling Logos */}
-        <div className="relative mb-4 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-100 pointer-events-none"></div>
-          <div className="flex whitespace-nowrap animate-scroll-left">
-            {shuffledPartners1
-              .concat(shuffledPartners1)
-              .map((partner, index) => (
+        {/* Scrolling Logos */}
+        <div className="relative overflow-hidden py-4">
+          <div className="scroll-left">
+            {[...shuffledPartners, ...shuffledPartners].map(
+              (partner, index) => (
                 <div
                   key={index}
-                  className="inline-block w-20 flex-shrink-0 mx-4"
+                  className="flex-shrink-0 mx-4"
+                  style={{ width: "50px" }}
                 >
                   <img
                     src={partner.src}
                     alt={partner.alt}
-                    className="w-full h-auto"
+                    className="w-full h-auto object-contain"
                     loading="lazy"
                   />
                 </div>
-              ))}
+              )
+            )}
           </div>
         </div>
-
-        {/* Left to Right Scrolling Logos */}
-        {/* <div className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-gray-100 pointer-events-none"></div>
-          <div className="flex whitespace-nowrap animate-scroll-right">
-            {shuffledPartners2
-              .concat(shuffledPartners2)
-              .map((partner, index) => (
-                <div
-                  key={index}
-                  className="inline-block w-20 flex-shrink-0 mx-4"
-                >
-                  <img
-                    src={partner.src}
-                    alt={partner.alt}
-                    className="w-full h-auto"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

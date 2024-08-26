@@ -1,0 +1,15 @@
+/* animations.css */
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-left {
+  display: flex;
+  animation: scrollLeft 30s linear infinite;
+}

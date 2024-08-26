@@ -208,7 +208,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 py-12 bg-gray-100">
+      <div className="w-full px-4 py-12 bg-gray-100 -mt-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">

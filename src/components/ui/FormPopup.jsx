@@ -47,7 +47,10 @@ const FormPopup = ({ isOpen, onClose, onNotification }) => {
         },
         (err) => {
           console.error("FAILED...", err);
-          onNotification("Failed to send email. Please try again later.", "error"); // Trigger error notification
+          onNotification(
+            "Failed to send email. Please try again later.",
+            "error"
+          ); // Trigger error notification
           onClose(); // Close the popup
         }
       );
@@ -69,6 +72,7 @@ const FormPopup = ({ isOpen, onClose, onNotification }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              placeholder="enter you full name"
             />
           </div>
 
@@ -81,6 +85,7 @@ const FormPopup = ({ isOpen, onClose, onNotification }) => {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
+              placeholder="enter you phone number here"
             />
           </div>
 

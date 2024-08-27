@@ -11,5 +11,6 @@
 
 .scroll-left {
   display: flex;
-  animation: scrollLeft 10s linear infinite;
+  white-space: nowrap;
+  animation: scrollLeft 40s linear infinite;
 }

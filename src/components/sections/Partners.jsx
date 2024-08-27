@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../animation.css";
+import "../../../src/animation.css";
 
 // Dynamically import all logos
 const logos = import.meta.glob("/src/assets/images/partner_logos/*.png", {

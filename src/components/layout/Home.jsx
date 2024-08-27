@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./Header";
-import Partners from "./Partners";
-import Subscription from "./subscription/Subscription";
+import Header from "../common/Header";
+import Partners from "../sections/Partners";
+import Subscription from "../sections/Subscription";
 // import Services from "./Services";
-import Footer from "../components/Footer";
+import Footer from "../common/Footer";
 
 const Home = () => {
   return (

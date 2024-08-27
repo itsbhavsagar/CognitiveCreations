@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import FormPopup from "./FormPopup.jsx"; // Adjust the path as needed
-import Notification from "./Notification"; // Ensure you have this component
+import FormPopup from "../ui/FormPopup"; // Adjust the path as needed
+import Notification from "../ui/Notification"; // Ensure you have this component
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

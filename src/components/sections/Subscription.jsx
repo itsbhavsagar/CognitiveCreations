@@ -34,9 +34,9 @@ const Subscription = () => {
           {/* Card 1 */}
           <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <img
-              src="https://i.ytimg.com/vi/vUsO1m8fyO4/maxresdefault.jpg"
+              src="https://cdn.sanity.io/images/k0dlbavy/production/0a8b3a04db528994ac1f0a0f4a14ba4f97d87d21-1360x1360.png?w=1360&auto=format"
               alt="Our Approach"
-              className="w-full h-48 object-fit"
+              className="w-full h-48 object-contain"
             />
             <div className="p-6">
               <p className="mb-1 font-medium uppercase text-orange-500">

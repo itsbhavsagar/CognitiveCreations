@@ -9,7 +9,7 @@ const Header = () => {
         rel="stylesheet"
       />
 
-      <div className="relative min-h-screen w-screen font-sans  pt-6 sm:pt-32 md:pt-10">
+      <div className="relative max-h-screen w-screen font-sans  pt-6 sm:pt-32 md:pt-10">
         {/* Background Image with Blur */}
         {/* <div
           className="absolute inset-0 -z-10"

@@ -215,10 +215,10 @@ const Projects = () => (
   <section className="bg-white py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       <div className="relative mb-10 pt-8 md:mb-16">
-        <h2 className="mb-4 text-center font-serif text-3xl font-bold text-gray-800 md:mb-6 md:text-4xl">
-          Integration Guides
+        <h2 className="mb-4 text-center  text-3xl font-bold text-gray-600 md:mb-6 md:text-4xl">
+          Our Recent Case Studies
         </h2>
-        <span className="absolute left-1/2 top-0 rounded-lg bg-cyan-400 px-2 text-white">
+        <span className="absolute left-1/2 top-0 rounded-lg bg-lime-400 px-2 text-center text-white">
           NEW
         </span>
       </div>

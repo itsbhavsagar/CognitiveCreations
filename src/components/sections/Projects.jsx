@@ -141,7 +141,7 @@ const projects = [
     colorTo: "yellow-400",
     author: "Simon Lewis",
     authorTitle: "Founder of 2 Startups",
-    imgSrc: "/images/y9s3xOJV6rnQPKIrdPYJy.png",
+    imgSrc: "https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png",
     imgAlt: "Simon Lewis",
   },
   {
@@ -151,7 +151,7 @@ const projects = [
     colorTo: "cyan-400",
     author: "Simon Lewis",
     authorTitle: "Founder of 2 Startups",
-    imgSrc: "/images/y9s3xOJV6rnQPKIrdPYJy.png",
+    imgSrc: "https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png",
     imgAlt: "Simon Lewis",
   },
   {
@@ -161,7 +161,7 @@ const projects = [
     colorTo: "indigo-400",
     author: "Simon Lewis",
     authorTitle: "Founder of 2 Startups",
-    imgSrc: "/images/y9s3xOJV6rnQPKIrdPYJy.png",
+    imgSrc: "https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png",
     imgAlt: "Simon Lewis",
   },
   {
@@ -171,7 +171,7 @@ const projects = [
     colorTo: "rose-400",
     author: "Simon Lewis",
     authorTitle: "Founder of 2 Startups",
-    imgSrc: "/images/y9s3xOJV6rnQPKIrdPYJy.png",
+    imgSrc: "https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png",
     imgAlt: "Simon Lewis",
   },
 ];

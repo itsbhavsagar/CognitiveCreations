@@ -82,7 +82,7 @@ const Partners = () => {
 
   return (
     <section className="py-16 bg-gray-100 overflow-hidden">
-      <div className="container mx-auto px-6 text-center">
+      <div className="containe w-full mx-auto px-6 text-center">
         <h2 className="text-4xl font-extrabold mb-6 text-gray-700">
           Our Partners
         </h2>

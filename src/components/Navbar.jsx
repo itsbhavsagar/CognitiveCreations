@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import FormPopup from "./FormPopup.jsx"; // Adjust the path as needed
 import Notification from "./Notification"; // Ensure you have this component
 import { Link } from "react-router-dom";
@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [notification, setNotification] = useState(null);
+  const checkboxRef = useRef(null); // Reference to the checkbox
 
   const handleFormOpen = () => {
     setIsFormOpen(true);
@@ -24,6 +25,13 @@ const Navbar = () => {
     }, 3000); // Hide after 3 seconds
   };
 
+  // Function to close the menu
+  const closeMenu = () => {
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = false;
+    }
+  };
+
   return (
     <>
       <header className=" bg-white text-slate-700 w-screen fixed top-0 z-10 mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center shadow-md">
@@ -31,6 +39,7 @@ const Navbar = () => {
           to={"/"}
           href="#"
           className="flex items-center whitespace-nowrap text-2xl font-black"
+          onClick={closeMenu} // Close menu on link click
         >
           <span className="mr-2 text-4xl text-lime-600">
             <svg
@@ -50,7 +59,12 @@ const Navbar = () => {
           </span>
           Creatorinn
         </Link>
-        <input type="checkbox" className="peer hidden" id="navbar-open" />
+        <input
+          ref={checkboxRef}
+          type="checkbox"
+          className="peer hidden"
+          id="navbar-open"
+        />
         <label
           className="absolute top-5 right-5 cursor-pointer lg:hidden"
           htmlFor="navbar-open"
@@ -79,7 +93,7 @@ const Navbar = () => {
               <Link
                 to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2  hover:text-lime-600 font-semibold"
-                href="#"
+                onClick={closeMenu} // Close menu on link click
               >
                 Services
               </Link>
@@ -88,7 +102,7 @@ const Navbar = () => {
               <Link
                 to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
-                href="#"
+                onClick={closeMenu} // Close menu on link click
               >
                 Work
               </Link>
@@ -97,18 +111,18 @@ const Navbar = () => {
               <Link
                 to={"/"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
-                href="#"
+                onClick={closeMenu} // Close menu on link click
               >
                 Team
               </Link>
             </li>
             <li className="lg:mr-12">
               <Link
-                to={"/"}
+                to={"/contact"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
-                href="#"
+                onClick={closeMenu} // Close menu on link click
               >
-                <Link to="/contact">Contact</Link>
+                Contact
               </Link>
             </li>
           </ul>

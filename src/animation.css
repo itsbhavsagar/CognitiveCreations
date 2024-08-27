@@ -5,11 +5,11 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .scroll-left {
   display: flex;
-  animation: scrollLeft 30s linear infinite;
+  animation: scrollLeft 10s linear infinite;
 }

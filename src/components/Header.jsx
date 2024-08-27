@@ -4,12 +4,6 @@ const Header = () => {
   return (
     <>
       <div className=" max-h-screen w-screen font-sans -mt-10 pt-6 sm:pt-32 md:pt-10">
-        {/* CODE FOR BACKGROUND IMAGE */}
-        {/* <img
-          class="pointer-events-none absolute bottom-0 left-0 -z-10 opacity-[0.03]"
-          src="https://cdn.pixabay.com/photo/2022/01/11/17/04/city-6931092_640.jpg"
-          alt=""
-        /> */}
         <div className="mx-auto h-full px-4 py-28 md:py-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="">

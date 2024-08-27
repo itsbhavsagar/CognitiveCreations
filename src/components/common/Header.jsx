@@ -53,7 +53,7 @@ const Header = () => {
                 <a
                   href="/"
                   aria-label=""
-                  className="group inline-flex items-center font-semibold text-gray-600 ml-3"
+                  className="group inline-flex items-center font-semibold md:text-gray-600 text-orange-500 ml-3"
                 >
                   {" "}
                   Watch how it works

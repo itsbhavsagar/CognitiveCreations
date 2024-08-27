@@ -252,7 +252,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="text-center py-2">
+        <div className="text-center -mt-10 py-2">
           <a
             href="#"
             className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-full text-lg font-semibold shadow-lg transition-transform transform hover:scale-105"

@@ -13,7 +13,7 @@ const Subscription = () => {
       <div className="container mx-auto flex flex-col px-4 lg:px-6 lg:flex-row items-center">
         {/* Left Column */}
         <div className="mb-12 lg:mb-0 lg:w-1/2 lg:pr-16 xl:pr-20">
-          <h2 className="text-4xl font-extrabold text-lime-500 mb-6">
+          <h2 className="text-4xl font-extrabold text-gray-700 mb-6">
             Elevate Your Brand with Cutting-Edge Marketing Solutions
           </h2>
           <p className="text-gray-700 mb-8 leading-relaxed">

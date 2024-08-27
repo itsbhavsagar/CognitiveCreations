@@ -83,8 +83,8 @@ const Partners = () => {
   return (
     <section className="py-16 bg-gray-100 overflow-hidden">
       <div className="containe w-full mx-auto px-6 text-center">
-        <h2 className="text-4xl font-extrabold mb-6 text-gray-700">
-          Our Partners
+        <h2 className="text-2xl font-serif font-extrabold mb-6 text-gray-700">
+          BRANDS WE PARTNER WITH
         </h2>
         <p className="text-lg mb-10 text-gray-700">
           Empowering{" "}

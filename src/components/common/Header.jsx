@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <div className=" max-h-screen w-screen font-sans -mt-10 pt-6 sm:pt-32 md:pt-10">
-        <div className="mx-auto h-full px-4 py-28 md:py-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+        <div className="mx-auto h-full px-4 py-28 md:py-28 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="">
               <div className="lg:max-w-xl lg:pr-5">
@@ -31,8 +31,10 @@ const Header = () => {
                   </span>
                 </h2>
                 <p className="text-base text-gray-500">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque it.
+                  We craft unique identities with AI-driven strategies that make
+                  your startup stand out. Our tailored marketing solutions
+                  ensure your brand gets noticed and thrives in a competitive
+                  market.
                 </p>
               </div>
               <div className="mt-10 flex flex-col items-center md:flex-row">
@@ -44,7 +46,7 @@ const Header = () => {
                 </a> */}{" "}
                 <a
                   href="#"
-                  className="my-10 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
+                  className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
                 >
                   Request a Quote{" "}
                 </a>{" "}

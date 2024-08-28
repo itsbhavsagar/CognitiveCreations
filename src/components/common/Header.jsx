@@ -24,7 +24,7 @@ const Header = () => {
                   An A.I marketing agency for high growth startups
                 </p>
 
-                <h2 className="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 sm:text-7xl sm:leading-snug">
+                <h2 className="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 font-serif sm:text-7xl sm:leading-snug">
                   We make you <br /> look{" "}
                   <span className="my-1 inline-block border-b-8 border-orange-400 bg-lime-300 px-4 font-bold text-gray-500">
                     different
@@ -46,7 +46,7 @@ const Header = () => {
                 </a> */}{" "}
                 <a
                   href="#"
-                  className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
+                  className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white font-serif  text-white py-3 font-b px-6  text-xl "
                 >
                   Request a Quote{" "}
                 </a>{" "}
@@ -211,7 +211,7 @@ const Header = () => {
             <div className="mb-4">
               <span className="text-6xl font-bold text-lime-500">1</span>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Improve Sales</h3>
+            <h3 className="text-xl font-semibold mb-2 ">Improve Sales</h3>
             <p className="text-gray-600">
               Enhance your sales strategies to achieve better results and
               revenue.

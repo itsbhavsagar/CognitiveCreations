@@ -82,7 +82,7 @@ const Projects = () => (
   <section className="bg-white py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       <div className="relative mb-10 pt-2 md:mb-16">
-        <h2 className="mb-4 text-center text-3xl font-bold font-serif text-gray-600 md:mb-6 md:text-4xl">
+        <h2 className="mb-4 text-center text-4xl font-bold font-serif text-gray-700 md:mb-6 md:text-4xl">
           Our Recent Case Studies
         </h2>
       </div>

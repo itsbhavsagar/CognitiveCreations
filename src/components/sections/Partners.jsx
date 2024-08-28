@@ -81,9 +81,9 @@ const Partners = () => {
   }, [totalPartners]);
 
   return (
-    <section className="py-16 bg-gray-100 overflow-hidden">
+    <section className="py-8 bg-gray-100 overflow-hidden">
       <div className="containe w-full mx-auto px-6 text-center">
-        <h2 className="text-2xl font-serif font-extrabold mb-6 text-gray-700">
+        <h2 className="text-4xl font-serif font-extrabold mb-6 text-gray-700">
           BRANDS WE PARTNER WITH
         </h2>
         <p className="text-lg mb-10 text-gray-700">

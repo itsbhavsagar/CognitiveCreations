@@ -1,6 +1,22 @@
+/* index.css */
+
 @import "./animation.css";
 
 /* Tailwind CSS configuration */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CUSTOM FONT */
+
+@font-face {
+  font-family: "GameOfSquids";
+  src: local("GameOfSquids"),
+    url("../src/fonts/Game\ Of\ Squids.otf") format("opentype");
+  font-weight: normal;
+}
+
+/* Font class for GameOfSquids */
+.font-gameOfSquids {
+  font-family: "GameOfSquids", sans-serif;
+}

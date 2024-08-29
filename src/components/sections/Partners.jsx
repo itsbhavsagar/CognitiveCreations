@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../../src/animation.css";
+import "../../index.css";
 
 // Dynamically import all logos
 const logos = import.meta.glob("/src/assets/images/partner_logos/*.png", {
@@ -83,9 +84,17 @@ const Partners = () => {
   return (
     <section className="py-8 bg-gray-100 overflow-hidden">
       <div className="containe w-full mx-auto px-6 text-center">
-        <h2 className="text-4xl font-serif font-extrabold mb-6 text-gray-700">
+        {/* <h2 className="text-4xl  font-extrabold mb-6 text-gray-700">
+          BRANDS WE PARTNER WITH
+        </h2> */}
+
+        <h2
+          className="text-4xl font-serif font-extrabold mb-6 text-gray-700"
+          style={{ fontFamily: "GameOfSquids" }}
+        >
           BRANDS WE PARTNER WITH
         </h2>
+
         <p className="text-lg mb-10 text-gray-700">
           Empowering{" "}
           <span className="font-bold text-orange-600">

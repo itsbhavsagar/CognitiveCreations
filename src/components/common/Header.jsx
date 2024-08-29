@@ -80,7 +80,7 @@ const Header = () => {
                 <div className="flex items-center rounded-md border border-gray-100 bg-white px-4 py-3 shadow-lg">
                   <img
                     className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png"
+                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
                     alt="Simon Lewis"
                   />
                   <p className="ml-4 w-56">

@@ -1,65 +1,117 @@
+// src/components/Work.jsx
+
 import React from "react";
+
+const workProjects = [
+  {
+    id: 1,
+    title: "Mobile App Development",
+    description:
+      "A cutting-edge mobile app designed for seamless user experiences and high performance.",
+    image:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf2ce2205193507.66b64199aa265.jpg",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    description:
+      "A modern, responsive website built to enhance user engagement and drive conversions.",
+    image: "https://via.placeholder.com/600x400?text=Web+Development",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 3,
+    title: "Web3 Solutions",
+    description:
+      "Innovative Web3 solutions leveraging blockchain technology to create decentralized applications.",
+    image: "https://via.placeholder.com/600x400?text=Web3+Solutions",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 4,
+    title: "AI Marketing",
+    description:
+      "Advanced AI-driven marketing strategies to optimize campaign performance and ROI.",
+    image: "https://via.placeholder.com/600x400?text=AI+Marketing",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 5,
+    title: "AI Digital Content",
+    description:
+      "High-quality digital content generated using AI to enhance user engagement and content creation.",
+    image: "https://via.placeholder.com/600x400?text=AI+Digital+Content",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 6,
+    title: "Content Writing",
+    description:
+      "Professional content writing services for blogs, articles, and marketing materials.",
+    image: "https://via.placeholder.com/600x400?text=Content+Writing",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 7,
+    title: "Instagram Ads",
+    description:
+      "Targeted Instagram ad campaigns designed to boost brand awareness and engagement.",
+    image: "https://via.placeholder.com/600x400?text=Instagram+Ads",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+  {
+    id: 8,
+    title: "Facebook Ads",
+    description:
+      "Effective Facebook advertising strategies to drive traffic and increase conversions.",
+    image: "https://via.placeholder.com/600x400?text=Facebook+Ads",
+    video: "https://www.youtube.com/embed/YOqV1B4zY5E", // Dummy video URL
+  },
+];
 
 const Work = () => {
   return (
-    <div>
-      <section class="h-screen">
-        <div class="relative mx-auto">
-          <div class="absolute inset-0 bottom-56 bg-gradient-to-b from-indigo-700 via-blue-700 to-blue-600"></div>
-          <div class="relative pt-20 mx-auto w-full max-w-screen-xl px-2 text-left sm:px-10">
-            <div class="mx-auto flex flex-wrap space-x-3 py-4 text-sm sm:flex-row">
-              {/* <a class="whitespace-no-wrap p-3 text-white">Projects</a>
-              <a class="whitespace-no-wrap p-3 text-white opacity-50">
-                Invoicing
-              </a>
-              <a class="whitespace-no-wrap p-3 text-white opacity-50">
-                Proposals
-              </a>
-              <a class="whitespace-no-wrap p-3 text-white opacity-50">Forms</a>
-              <a class="whitespace-no-wrap p-3 text-white opacity-50">
-                Dashboards
-              </a> */}
-            </div>
-            <div class="rounded-xl bg-white shadow-2xl shadow-blue-200 lg:flex">
-              <div class="flex flex-col p-4 pb-6 sm:p-10 sm:pt-14 lg:w-2/5">
-                <div class="flex-auto">
-                  <h2 class="text-2xl font-black">
-                    Keep Track of Your Projects from Start to Finish
-                  </h2>
-                  <p class="pt-4">
-                    Create tasks, track time, share with colleagues, nd share
-                    progress in real time.
-                  </p>
-                  <div class="mt-6 flex flex-wrap">
-                    <p class="m-1 rounded-md text-gray-600 bg-gray-100 px-2 py-1 text-sm">
-                      Reusable Boards
-                    </p>
-                    <p class="m-1 rounded-md text-gray-600 bg-gray-100 px-2 py-1 text-sm">
-                      Multiple Views
-                    </p>
-                    <p class="m-1 rounded-md text-gray-600 bg-gray-100 px-2 py-1 text-sm">
-                      Custom Fields
-                    </p>
-                    <p class="m-1 rounded-md text-gray-600 bg-gray-100 px-2 py-1 text-sm">
-                      Multi Boards
-                    </p>
-                    <p class="m-1 rounded-md text-gray-600 bg-gray-100 px-2 py-1 text-sm">
-                      Custom Butler
-                    </p>
-                  </div>
-                </div>
+    <div className="px-4 py-8 bg-gray-100 mt-20">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-extrabold mb-4 text-gray-800">Our Work</h1>
+        <p className="text-lg text-gray-600">
+          Explore some of the outstanding projects we've worked on.
+        </p>
+      </header>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {workProjects.map((project) => (
+          <div
+            key={project.id}
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <div className="relative">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover transition-transform transform group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
+              <div className="absolute bottom-0 p-4 text-white bg-gradient-to-t from-black via-transparent to-transparent w-full">
+                <h2 className="text-xl font-semibold">{project.title}</h2>
               </div>
-              <div class="m-8 lg:w-3/5 hidden overflow-hidden rounded-xl sm:block">
-                <img
-                  class="object-cover w-full h-full"
-                  src="https://componentland.com/images/wDb1qtQu3xqsOUetV3Gzc.png"
-                  alt=""
-                />
+            </div>
+            <div className="p-6">
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <div className="relative pt-9/16">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={project.video}
+                  title={`Video for ${project.title}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </div>
   );
 };

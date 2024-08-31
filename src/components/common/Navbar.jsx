@@ -91,7 +91,7 @@ const Navbar = () => {
           <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li className="lg:mr-12">
               <Link
-                to={"/"}
+                to={"/services"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2  hover:text-lime-600 font-semibold"
                 onClick={closeMenu} // Close menu on link click
               >

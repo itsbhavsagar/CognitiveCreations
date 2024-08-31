@@ -3,27 +3,27 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div class="sm:p-10 my-auto mt-20">
-        <section class="mx-auto py-2">
-          <div class="mx-auto flex w-full flex-col items-center justify-center sm:max-w-screen-sm md:max-w-screen-md lg:flex-row">
-            <div class="text-center">
-              <h2 class="bg-clip-text text-3xl font-extrabold text-gray-700 sm:text-5xl">
+      <div className="sm:p-10 my-auto mt-20">
+        <section className="mx-auto py-2">
+          <div className="mx-auto flex w-full flex-col items-center justify-center sm:max-w-screen-sm md:max-w-screen-md lg:flex-row">
+            <div className="text-center">
+              <h2 className="bg-clip-text text-3xl font-extrabold text-gray-700 sm:text-5xl">
                 Get in touch
               </h2>
-              <p class="bg-gradient-to-r from-pink-500 to-indigo-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">
+              <p className="bg-gradient-to-r from-pink-500 to-indigo-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">
                 Let's take your business to the moon
               </p>
             </div>
           </div>
         </section>
-        <section class="mx-auto max-w-screen-xl md:rounded-md md:border md:shadow-lg">
-          <div class="grid grid-cols-4 text-gray-800 lg:grid-cols-3">
-            <div class="col-span-4 bg-gray-50 px-8 py-10 text-gray-800 md:col-span-2 md:border-r md:px-10 md:py-12 lg:col-span-1">
-              <h2 class="mb-8 text-2xl font-black">Contact Us</h2>
+        <section className="mx-auto max-w-screen-xl md:rounded-md md:border md:shadow-lg">
+          <div className="grid grid-cols-4 text-gray-800 lg:grid-cols-3">
+            <div className="col-span-4 bg-gray-50 px-8 py-10 text-gray-800 md:col-span-2 md:border-r md:px-10 md:py-12 lg:col-span-1">
+              <h2 className="mb-8 text-2xl font-black">Contact Us</h2>
               <ul>
-                <li class="mb-6 flex items-start text-left">
+                <li className="mb-6 flex items-start text-left">
                   <svg
-                    class="shrink-0 mr-6 text-2xl text-red-500"
+                    className="shrink-0 mr-6 text-2xl text-red-500"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"
@@ -39,17 +39,17 @@ const Contact = () => {
                   </svg>
                   <div>
                     <a
-                      class="cursor-pointer font-serif text-base md:text-lg"
+                      className="cursor-pointer font-serif text-base md:text-lg"
                       href="#"
                     >
                       enquiry@creatorinn.com
                     </a>
-                    <span class="block text-xs uppercase">email</span>
+                    <span className="block text-xs uppercase">email</span>
                   </div>
                 </li>
-                <li class="my-6 flex items-center text-left">
+                <li className="my-6 flex items-center text-left">
                   <svg
-                    class="shrink-0 mr-6 text-2xl text-blue-500"
+                    className="shrink-0 mr-6 text-2xl text-blue-500"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"
@@ -65,17 +65,17 @@ const Contact = () => {
                   </svg>
                   <div>
                     <a
-                      class="cursor-pointer font-serif text-base md:text-lg"
+                      className="cursor-pointer font-serif text-base md:text-lg"
                       href="#"
                     >
                       creatorinn.real
                     </a>
-                    <span class="block text-xs uppercase">twitter</span>
+                    <span className="block text-xs uppercase">twitter</span>
                   </div>
                 </li>
-                <li class="my-6 flex items-center text-left">
+                <li className="my-6 flex items-center text-left">
                   <svg
-                    class="shrink-0 mr-6 text-2xl text-blue-500"
+                    className="shrink-0 mr-6 text-2xl text-blue-500"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"
@@ -88,38 +88,40 @@ const Contact = () => {
                       fill="currentColor"
                       fill-rule="evenodd"
                       d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.54ZM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0Z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                   <div>
-                    <p class="font-serif text-base md:text-lg">Creatorinn</p>
-                    <span class="block text-xs uppercase">LinkedIn</span>
+                    <p className="font-serif text-base md:text-lg">
+                      Creatorinn
+                    </p>
+                    <span className="block text-xs uppercase">LinkedIn</span>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="order-first col-span-4 max-w-screen-md px-8 py-10 md:order-last md:col-span-2 md:px-10 md:py-12">
-              <h2 class="mb-8 text-2xl font-black">Get in touch</h2>
-              <p class="mt-2 mb-4 font-sans text-sm tracking-normal">
+            <div className="order-first col-span-4 max-w-screen-md px-8 py-10 md:order-last md:col-span-2 md:px-10 md:py-12">
+              <h2 className="mb-8 text-2xl font-black">Get in touch</h2>
+              <p className="mt-2 mb-4 font-sans text-sm tracking-normal">
                 Don't be shy to ask me a question.
               </p>
               <form action="">
-                <div class="md:col-gap-4 mb-5 grid md:grid-cols-2">
+                <div className="md:col-gap-4 mb-5 grid md:grid-cols-2">
                   <input
-                    class="col-span-1 w-full border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
+                    className="col-span-1 w-full border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
                     type="text"
                     placeholder="Name"
                     name="name"
                   />
                   <input
-                    class="col-span-1 w-full border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
+                    className="col-span-1 w-full border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
                     type="email"
                     placeholder="Email"
                     name="email"
                   />
                 </div>
                 <textarea
-                  class="mb-10 w-full resize-y whitespace-pre-wrap border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
+                  className="mb-10 w-full resize-y whitespace-pre-wrap border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
                   id=""
                   rows="6"
                   placeholder="Question"
@@ -127,11 +129,11 @@ const Contact = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  class="group flex cursor-pointer items-center rounded-xl bg-lime-300 bg-none px-8 py-4 text-center font-semibold leading-tight text-black"
+                  className="group flex cursor-pointer items-center rounded-xl bg-lime-300 bg-none px-8 py-4 text-center font-semibold leading-tight text-black"
                 >
                   Send
                   <svg
-                    class="group-hover:ml-8 ml-4 transition-all"
+                    className="group-hover:ml-8 ml-4 transition-all"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"

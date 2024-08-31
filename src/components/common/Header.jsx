@@ -174,6 +174,7 @@ const Header = () => {
                     />
                   </svg>
                 </div>
+
                 <div className="mt-2 flex flex-col items-start rounded-md border border-gray-100 bg-white px-4 pt-3 pb-6 shadow-lg">
                   <strong className="block text-lg font-medium">
                     Site Analytics
@@ -205,6 +206,12 @@ const Header = () => {
       </div>
 
       <div className="w-full px-4 py-12 bg-gray-100 -mt-24">
+        <h2
+          className="text-4xl font-serif font-extrabold mb-6 text-center text-gray-700"
+          style={{ fontFamily: "GameOfSquids" }}
+        >
+          RESULT DRIVEN
+        </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">

@@ -20,3 +20,9 @@
 .font-gameOfSquids {
   font-family: "GameOfSquids", sans-serif;
 }
+
+/* styles.css */
+.phone-input {
+  outline: none !important; /* Override any internal outline styles */
+  box-shadow: none !important; /* Remove box-shadow if needed */
+}

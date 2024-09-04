@@ -210,7 +210,7 @@ const Header = () => {
           className="text-4xl font-serif font-extrabold mb-6 text-center text-gray-700"
           style={{ fontFamily: "GameOfSquids" }}
         >
-          RESULT DRIVEN
+          <span className="uppercase">Solutions for every industry</span>
         </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Card 1 */}

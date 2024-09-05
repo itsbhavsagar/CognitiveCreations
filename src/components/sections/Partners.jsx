@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "../../../src/animation.css";
-import "../../index.css";
+import React, { useState, useEffect } from 'react';
+import '../../../src/animation.css';
+import '../../index.css';
 
 // Dynamically import all logos
-const logos = import.meta.glob("/src/assets/images/partner_logos/*.png", {
+const logos = import.meta.glob('/src/assets/images/partner_logos/*.png', {
   eager: true,
 });
 
@@ -90,22 +90,22 @@ const Partners = () => {
 
         <h2
           className="text-4xl font-serif font-extrabold mb-6 text-gray-700"
-          style={{ fontFamily: "GameOfSquids" }}
+          style={{ fontFamily: 'GameOfSquids' }}
         >
           BRANDS WE PARTNER WITH
         </h2>
 
         <p className="text-lg mb-10 text-gray-700">
-          Empowering{" "}
+          Empowering{' '}
           <span className="font-bold text-orange-600">
             {formatNumber(businessCount)}+
-          </span>{" "}
-          brands with{" "}
-          <span className="font-bold text-orange-600">cutting-edge</span>{" "}
-          digital marketing strategies, across in partnership with{" "}
+          </span>{' '}
+          brands with{' '}
+          <span className="font-bold text-orange-600">cutting-edge</span>{' '}
+          digital marketing strategies, across in partnership with{' '}
           <span className="font-bold text-orange-600">
             {formatNumber(partnerCount)}+
-          </span>{" "}
+          </span>{' '}
           industry leaders driving global success.
         </p>
 
@@ -117,7 +117,7 @@ const Partners = () => {
                 <div
                   key={index}
                   className="flex-shrink-0 mx-4"
-                  style={{ width: "50px" }}
+                  style={{ width: '50px' }}
                 >
                   <img
                     src={partner.src}

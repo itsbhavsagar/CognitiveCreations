@@ -4,18 +4,13 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        scrollLeft: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
         scrollRight: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-50%)' }, // Adjust to scroll to the end of the duplicated content
         },
       },
       animation: {
-        'scroll-left': 'scrollLeft 20s linear infinite',
-        'scroll-right': 'scrollRight 20s linear infinite',
+        'scroll-right': 'scrollRight 20s linear infinite', // Adjust duration as needed
       },
     },
   },

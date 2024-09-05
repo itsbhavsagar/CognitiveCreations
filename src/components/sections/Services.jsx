@@ -1,242 +1,276 @@
+// // src/components/Services.jsx
+
+// import React from "react";
+
+// const services = [
+//   {
+//     id: 1,
+//     title: "SEO Optimization",
+//     description:
+//       "Improve your website’s visibility on search engines and attract more organic traffic.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ab936189130685.65a6e82209dec.jpg",
+//   },
+//   {
+//     id: 2,
+//     title: "Social Media Management",
+//     description:
+//       "Boost your brand’s presence on social media platforms with effective strategies and content.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c9d9eb166653723.641bcd767c422.png",
+//   },
+//   {
+//     id: 3,
+//     title: "Content Marketing",
+//     description:
+//       "Engage your audience with high-quality content tailored to your target market.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c78a85195324807.660be16ac892a.jpg",
+//   },
+//   {
+//     id: 4,
+//     title: "Pay-Per-Click Advertising",
+//     description:
+//       "Drive targeted traffic to your site through strategic PPC campaigns and ad management.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c59b1148472523.62d66a75d8b5e.png",
+//   },
+//   {
+//     id: 5,
+//     title: "Mobile App Development",
+//     description:
+//       "Create high-performance mobile applications tailored to your business needs.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/58bda5170467947.645e383f56dff.jpg",
+//   },
+//   {
+//     id: 6,
+//     title: "Web Development",
+//     description:
+//       "Design and develop custom websites that are responsive, user-friendly, and optimized for performance.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3fc66c177208431.651ae075d385a.jpg",
+//   },
+//   {
+//     id: 7,
+//     title: "Web3 Services",
+//     description:
+//       "Leverage the power of blockchain technology for decentralized applications and smart contracts.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4f31ec197228077.662cb07b7be82.jpg",
+//   },
+//   {
+//     id: 8,
+//     title: "AI Marketing",
+//     description:
+//       "Utilize artificial intelligence to optimize marketing strategies and enhance customer engagement.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/1912e1194355135.65fac33dcaf0a.png",
+//   },
+//   {
+//     id: 9,
+//     title: "AI Digital Content",
+//     description:
+//       "Generate and optimize digital content using advanced AI tools to drive better results.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ea419b191059881.65c4d26dc55e2.png",
+//   },
+//   {
+//     id: 10,
+//     title: "Content Writing",
+//     description:
+//       "Craft compelling and engaging content tailored to your audience and business goals.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2c902141834431.625bdacb7ae0b.png",
+//   },
+//   {
+//     id: 11,
+//     title: "Instagram Ads",
+//     description:
+//       "Create targeted Instagram ad campaigns to boost your brand’s visibility and engagement.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/42eb34119166171.609828d3b8ac3.png",
+//   },
+//   {
+//     id: 12,
+//     title: "Facebook Ads",
+//     description:
+//       "Drive traffic and increase conversions with well-targeted Facebook advertising campaigns.",
+//     icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/d346b7108424351.5fbd61c13c3fd.jpg",
+//   },
+//   // Add more services as needed
+// ];
+
+// const Services = () => {
+//   return (
+//     <div className="px-4 py-8 bg-gray-100 mt-20">
+//       <header className="text-center mb-12">
+//         <h1 className="text-3xl font-bold mb-4 text-gray-800">Our Services</h1>
+//         <p className="text-lg text-gray-600">
+//           Explore our extensive range of services designed to drive your
+//           business growth.
+//         </p>
+//       </header>
+//       <div className="flex flex-wrap gap-8 justify-center">
+//         {services.map((service) => (
+//           <div
+//             key={service.id}
+//             className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-80 "
+//           >
+//             <img
+//               src={service.icon}
+//               alt={service.title}
+//               className="w-full h-48 object-cover transition-transform transform hover:scale-110"
+//             />
+//             <div className="p-6">
+//               <h2 className="text-xl font-semibold mb-2 text-gray-800">
+//                 {service.title}
+//               </h2>
+//               <p className="text-gray-700">{service.description}</p>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div className="text-center mt-12">
+//         <p className="text-lg mb-4 text-gray-800">
+//           Ready to take your digital marketing to the next level?
+//         </p>
+//         <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">
+//           Contact Us
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Services;
+
+// src/components/Services.jsx
+
 import React from "react";
-import { ImYoutube2 } from "react-icons/im";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaFacebook,
-  FaLinkedin,
-  FaGoogle,
-} from "react-icons/fa";
 
-// ServiceCard Component: Reusable component for each service card
-const ServiceCard = ({ Icon, colorClass, title, description }) => (
-  <div className="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
-    <div className="my-4 flex items-center">
-      {/* Icon container with dynamic background color and icon */}
-      <div
-        className={`mr-4 flex h-12 w-16 items-center justify-center rounded-lg border ${colorClass} text-4xl text-white`}
-      >
-        <Icon />
-      </div>
-      {/* Service title */}
-      <h3 className="text-2xl font-bold md:text-xl">{title}</h3>
-    </div>
-    {/* Service description */}
-    <p className="text-gray-700">{description}</p>
-  </div>
-);
+const services = [
+  {
+    id: 1,
+    title: "SEO Optimization",
+    description:
+      "Improve your website’s visibility on search engines and attract more organic traffic.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ab936189130685.65a6e82209dec.jpg",
+  },
+  {
+    id: 2,
+    title: "Social Media Management",
+    description:
+      "Boost your brand’s presence on social media platforms with effective strategies and content.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c9d9eb166653723.641bcd767c422.png",
+  },
+  {
+    id: 3,
+    title: "Content Marketing",
+    description:
+      "Engage your audience with high-quality content tailored to your target market.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c78a85195324807.660be16ac892a.jpg",
+  },
+  {
+    id: 4,
+    title: "Pay-Per-Click Advertising",
+    description:
+      "Drive targeted traffic to your site through strategic PPC campaigns and ad management.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c59b1148472523.62d66a75d8b5e.png",
+  },
+  {
+    id: 5,
+    title: "Mobile App Development",
+    description:
+      "Create high-performance mobile applications tailored to your business needs.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/58bda5170467947.645e383f56dff.jpg",
+  },
+  {
+    id: 6,
+    title: "Web Development",
+    description:
+      "Design and develop custom websites that are responsive, user-friendly, and optimized for performance.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3fc66c177208431.651ae075d385a.jpg",
+  },
+  {
+    id: 7,
+    title: "Web3 Services",
+    description:
+      "Leverage the power of blockchain technology for decentralized applications and smart contracts.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4f31ec197228077.662cb07b7be82.jpg",
+  },
+  {
+    id: 8,
+    title: "AI Marketing",
+    description:
+      "Utilize artificial intelligence to optimize marketing strategies and enhance customer engagement.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/1912e1194355135.65fac33dcaf0a.png",
+  },
+  {
+    id: 9,
+    title: "AI Digital Content",
+    description:
+      "Generate and optimize digital content using advanced AI tools to drive better results.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ea419b191059881.65c4d26dc55e2.png",
+  },
+  {
+    id: 10,
+    title: "Content Writing",
+    description:
+      "Craft compelling and engaging content tailored to your audience and business goals.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2c902141834431.625bdacb7ae0b.png",
+  },
+  {
+    id: 11,
+    title: "Instagram Ads",
+    description:
+      "Create targeted Instagram ad campaigns to boost your brand’s visibility and engagement.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/42eb34119166171.609828d3b8ac3.png",
+  },
+  {
+    id: 12,
+    title: "Facebook Ads",
+    description:
+      "Drive traffic and increase conversions with well-targeted Facebook advertising campaigns.",
+    icon: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/d346b7108424351.5fbd61c13c3fd.jpg",
+  },
+  // Add more services as needed
+];
 
-// Services Component: Main component for displaying all services
 const Services = () => {
-  // Array of service data, each containing icon, color class, title, and description
-  const services = [
-    {
-      Icon: ImYoutube2,
-      colorClass: "bg-red-600",
-      title: "YouTube",
-      description: `At Cognitive Creations, we craft compelling video content that elevates your brand on YouTube.
-      From concept to creation, we ensure your message resonates with the right audience and drives engagement.
-      Let us handle the details while you watch your brand grow.`,
-    },
-    {
-      Icon: FaInstagram,
-      colorClass:
-        "bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600",
-      title: "Instagram",
-      description: `At Cognitive Creations, we create content that captures attention and drives engagement.
-      From stunning visuals to creative campaigns, we make sure your brand shines on Instagram.
-      Let us handle the strategy while you connect with your audience.`,
-    },
-    {
-      Icon: FaTwitter,
-      colorClass: "bg-gradient-to-br from-blue-400 to-blue-600",
-      title: "Twitter",
-      description: `At Cognitive Creations, we craft impactful tweets and engaging content that elevate your brand on Twitter.
-      From trending hashtags to creative campaigns, we help you connect with your audience and drive meaningful conversations.
-      Let us manage your Twitter presence while you focus on your business.`,
-    },
-    {
-      Icon: FaFacebook,
-      colorClass: "bg-gradient-to-br from-blue-600 to-blue-800",
-      title: "Facebook",
-      description: `At Cognitive Creations, we help your brand connect with millions on Facebook.
-      From targeted ads to engaging posts, we create content that boosts visibility and drives interaction.
-      Let us manage your Facebook presence while you focus on growing your business.`,
-    },
-    {
-      Icon: FaLinkedin,
-      colorClass: "bg-gradient-to-br from-blue-700 to-blue-900",
-      title: "LinkedIn",
-      description: `At Cognitive Creations, we enhance your brand’s professional image on LinkedIn.
-      From strategic posts to targeted networking, we craft content that builds connections and drives business growth.
-      Let us manage your LinkedIn strategy while you focus on your industry leadership.`,
-    },
-    {
-      Icon: FaGoogle,
-      colorClass: "bg-gradient-to-br from-blue-500 to-orange-500",
-      title: "Google My Business",
-      description: `At Cognitive Creations, we optimize your Google My Business profile to boost local visibility and attract more customers.
-      From managing reviews to enhancing your listing, we ensure your business stands out in local searches.
-      Let us handle your Google My Business presence while you grow your customer base.`,
-    },
-  ];
-
   return (
-    <>
-      <section className="mx-auto px-6 text-gray-800 md:max-w-screen-xl ">
-        {/* Section header */}
-        <div className="mx-auto mt-10 mb-16 block px-6 text-center">
-          <h2 className="mx-auto font-bold text-2xl lg:text-5xl">
-            Your
-            {/* Highlighted text */}
-            <span className="md:text-4xl text-2xl lg:text-5xl mx-auto bg-sky-400a mr-6 ml-6 inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring">
-              {" "}
-              Digital Future{" "}
-            </span>
-            is Here
-          </h2>
-          {/* Section description */}
-          <div className="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-gray-700 md:w-3/4 xl:w-3/4">
-            <p className="text-lg">
-              At Cognitive Creations, we bridge the gap between vision and
-              reality. Our expert team harnesses the power of cutting-edge
-              technology, AI, and creative strategies to build digital solutions
-              that propel your brand into the future. Whether it's innovative
-              apps, dynamic websites, or impactful marketing campaigns, we're
-              here to transform your ideas into tangible success.
-            </p>
-          </div>
-          {/* Call to Action buttons */}
-          <div className="mt-8 text-center">
-            <a
-              className="mx-2 mb-2 inline-block rounded bg-blue-500 px-6 py-2 text-xl font-medium text-white shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
-              href="#"
-              target="_blank"
-            >
-              Get Started
-            </a>
-            <a
-              className="mx-2 mb-2 inline-block rounded bg-lime-300 px-6 py-2 text-xl font-medium text-black shadow md:mx-4 md:mt-2 md:text-lg hover:scale-105 hover:shadow-md"
-              href="#"
-            >
-              Book a Demo
-            </a>
-          </div>
-        </div>
-        {/* Service Cards Grid */}
-        <div className="grid gap-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Map through services array and render a ServiceCard for each */}
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </div>
-      </section>
-
-      <section className="relative mx-auto px-6 text-gray-800 md:max-w-screen-xl overflow-hidden ">
-        {/* Background Animation */}
-
-        {/* Section header */}
-        <div className="relative mx-auto pt-20 pb-16 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600 mb-4">
-            Your
-            {/* Highlighted text */}
-            <span className="bg-gradient-to-r from-lime-400 to-sky-400 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl mx-2 inline-flex items-center animate-bounce">
-              Digital Future
-            </span>
-            is Here
-          </h2>
-          {/* Section description */}
-          <p className="text-lg md:text-xl leading-relaxed text-gray-600 max-w-2xl mx-auto mb-8">
-            At Cognitive Creations, we bridge the gap between vision and
-            reality. Our expert team harnesses the power of cutting-edge
-            technology, AI, and creative strategies to build digital solutions
-            that propel your brand into the future. Whether it's innovative
-            apps, dynamic websites, or impactful marketing campaigns, we're here
-            to transform your ideas into tangible success.
-          </p>
-          {/* Call to Action buttons */}
-          <div className="flex flex-col gap-4 sm:flex-row justify-center">
-            <a
-              className="bg-blue-600 px-8 py-3 text-xl font-semibold text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
-              href="#"
-              target="_blank"
-            >
-              Get Started
-            </a>
-            <a
-              className="bg-lime-400 px-8 py-3 text-xl font-semibold text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
-              href="#"
-            >
-              Book a Demo
-            </a>
-          </div>
-        </div>
-
-        {/* Service Cards Grid */}
-        <div className="relative grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-12 mb-12">
-          {/* Map through services array and render a ServiceCard for each */}
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-100 animate-card"
-            >
-              <ServiceCard {...service} />
+    <div className="px-4 py-8 bg-gray-100 mt-20">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-serif font-extrabold mb-4 text-gray-800">
+          Our Services
+        </h1>
+        <p className="text-lg text-gray-600">
+          Explore our extensive range of services designed to drive your
+          business growth.
+        </p>
+      </header>
+      <div className="flex flex-wrap gap-8 justify-center">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-80"
+          >
+            <img
+              src={service.icon}
+              alt={service.title}
+              className="w-full h-48 object-cover transition-transform transform hover:scale-110"
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2 text-gray-800">
+                {service.title}
+              </h2>
+              <p className="text-gray-700">{service.description}</p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
+      <div className="text-center mt-12">
+        <p className="text-lg mb-4 text-gray-800">
+          Ready to take your digital marketing to the next level?
+        </p>
 
-      <style jsx>{`
-        @keyframes bgShift {
-          0% {
-            background-position: 0% 0%;
-          }
-          100% {
-            background-position: 100% 100%;
-          }
-        }
+        <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">
+          Contact Us
+        </button>
+      </div>
+    </div>
 
-        @keyframes bounce {
-          0%,
-          20%,
-          50%,
-          80%,
-          100% {
-            transform: translateY(0);
-          }
-          40% {
-            transform: translateY(-20px);
-          }
-          60% {
-            transform: translateY(-10px);
-          }
-        }
 
-        @keyframes cardAnimation {
-          from {
-            transform: translateY(20px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
 
-        .animate-bgShift {
-          animation: bgShift 15s linear infinite;
-          background-size: 200% 200%;
-        }
-
-        .animate-bounce {
-          animation: bounce 1.5s infinite;
-        }
-
-        .animate-card {
-          animation: cardAnimation 0.6s ease-in-out;
-        }
-      `}</style>
-    </>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscription = () => {
   return (
-    <section className="relative py-20 bg-gray-50 overflow-hidden">
+    <section className="relative md:py-16 py-10 bg-gray-50 overflow-hidden">
       {/* Background Image */}
       <img
         className="pointer-events-none absolute bottom-0 left-0 z-10 opacity-[0.1] w-full h-full object-cover"
@@ -13,7 +13,7 @@ const Subscription = () => {
       <div className="container mx-auto flex flex-col px-4 lg:px-6 lg:flex-row items-center">
         {/* Left Column */}
         <div className="mb-12 lg:mb-0 lg:w-1/2 lg:pr-16 xl:pr-20">
-          <h2 className="text-4xl font-extrabold text-gray-700 mb-6">
+          <h2 className="text-4xl font-extrabold text-gray-700 mb-6 font-serif">
             Elevate Your Brand with Cutting-Edge Marketing Solutions
           </h2>
           <p className="text-gray-700 mb-8 leading-relaxed">
@@ -23,10 +23,10 @@ const Subscription = () => {
             and engagement. Join the ranks of our successful partners and see
             how we can make an impact together.
           </p>
-          <div>
+          {/* <div>
             <p className="font-bold text-lime-500 text-lg">Founder</p>
             <p className="text-gray-500">Founder & CEO</p>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Column */}

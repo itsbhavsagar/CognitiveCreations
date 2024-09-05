@@ -91,7 +91,7 @@ const Navbar = () => {
           <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li className="lg:mr-12">
               <Link
-                to={"/"}
+                to={"/services"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2  hover:text-lime-600 font-semibold"
                 onClick={closeMenu} // Close menu on link click
               >
@@ -100,7 +100,7 @@ const Navbar = () => {
             </li>
             <li className="lg:mr-12">
               <Link
-                to={"/"}
+                to={"/work"}
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 onClick={closeMenu} // Close menu on link click
               >
@@ -130,7 +130,7 @@ const Navbar = () => {
           <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
             <button
               onClick={handleFormOpen}
-              className="whitespace-nowrap rounded bg-gray-700 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none"
+              className="whitespace-nowrap rounded bg-gray-600 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none"
             >
               Book free consultation
             </button>

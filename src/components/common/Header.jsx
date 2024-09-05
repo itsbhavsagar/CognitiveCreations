@@ -24,7 +24,7 @@ const Header = () => {
                   An A.I marketing agency for high growth startups
                 </p>
 
-                <h2 className="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 sm:text-7xl sm:leading-snug">
+                <h2 className="mb-6 max-w-lg text-5xl font-thin leading-snug tracking-tight text-gray-600 font-serif sm:text-7xl sm:leading-snug">
                   We make you <br /> look{" "}
                   <span className="my-1 inline-block border-b-8 border-orange-400 bg-lime-300 px-4 font-bold text-gray-500">
                     different
@@ -46,7 +46,7 @@ const Header = () => {
                 </a> */}{" "}
                 <a
                   href="#"
-                  className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white  text-white py-3 font-b px-6  text-xl "
+                  className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white font-serif  text-white py-3 font-b px-6  text-xl "
                 >
                   Request a Quote{" "}
                 </a>{" "}
@@ -80,7 +80,7 @@ const Header = () => {
                 <div className="flex items-center rounded-md border border-gray-100 bg-white px-4 py-3 shadow-lg">
                   <img
                     className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/y9s3xOJV6rnQPKIrdPYJy.png"
+                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
                     alt="Simon Lewis"
                   />
                   <p className="ml-4 w-56">
@@ -174,6 +174,7 @@ const Header = () => {
                     />
                   </svg>
                 </div>
+
                 <div className="mt-2 flex flex-col items-start rounded-md border border-gray-100 bg-white px-4 pt-3 pb-6 shadow-lg">
                   <strong className="block text-lg font-medium">
                     Site Analytics
@@ -205,13 +206,19 @@ const Header = () => {
       </div>
 
       <div className="w-full px-4 py-12 bg-gray-100 -mt-24">
+        <h2
+          className="text-4xl font-serif font-extrabold mb-6 text-center text-gray-700"
+          style={{ fontFamily: "GameOfSquids" }}
+        >
+          <span className="uppercase">Solutions for every industry</span>
+        </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">
             <div className="mb-4">
               <span className="text-6xl font-bold text-lime-500">1</span>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Improve Sales</h3>
+            <h3 className="text-xl font-semibold mb-2 ">Improve Sales</h3>
             <p className="text-gray-600">
               Enhance your sales strategies to achieve better results and
               revenue.

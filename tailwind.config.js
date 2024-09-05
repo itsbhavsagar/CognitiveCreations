@@ -14,8 +14,8 @@ export default {
         },
       },
       animation: {
-        'scroll-left': 'scrollLeft 1180s linear infinite',
-        'scroll-right': 'scrollRight 1180s linear infinite',
+        'scroll-left': 'scrollLeft 80s linear infinite',
+        'scroll-right': 'scrollRight 80s linear infinite',
       },
     },
   },

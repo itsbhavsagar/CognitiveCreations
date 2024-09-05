@@ -219,7 +219,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 py-6">
           <div className="mx-auto max-w-screen-xl px-6 text-center text-gray-400 sm:flex sm:justify-between">
             <p className="order-2 mt-4 sm:order-1 sm:mt-0">
-              © 2024 Creatorinn | All Rights Reserved
+              © 2024 Creatorinn | All
             </p>
             <p className="order-1 sm:order-2">
               Made with ❤️ in 🇮🇳 by Creatorinn

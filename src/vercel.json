@@ -1,20 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/",
-        "destination": "/"
-      },
-      {
-        "source": "/services",
-        "destination": "/"
-      },
-      {
-        "source": "/work",
-        "destination": "/"
-      },
-      {
-        "source": "/contact",
-        "destination": "/"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }

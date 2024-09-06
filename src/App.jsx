@@ -1,12 +1,13 @@
-import Navbar from "./components/common/Navbar";
+import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
+import { Outlet } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop.jsx'; // Import ScrollToTop component
 
-import { Outlet } from "react-router-dom";
-
-import Footer from "./components/common/Footer";
 export default function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop /> {/* Add it here to ensure scrolling */}
       <Outlet />
       <Footer />
     </>

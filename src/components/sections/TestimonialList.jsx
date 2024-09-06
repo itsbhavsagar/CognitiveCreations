@@ -22,13 +22,12 @@ const testimonialsTop = [
       'https://www.upeducators.com/wp-content/uploads/2021/11/64YgLYfliOiZ2Lsir1Kf423mG4lSsRXG3UwL0f52C9sTesNYwsdWtUyTOOhN-595xh.jpg',
   },
   {
-    name: 'Yash Sharma',
-    title: 'Shyam Machine House, Founder',
-    companyLogo:
-      'https://5.imimg.com/data5/SELLER/Logo/2021/6/HE/UN/IZ/14503259/capture-120x120.PNG',
+    name: 'Jitendra Chaudhary',
+    title: 'Hotel Vistara Grand, Founder',
+    companyLogo: 'https://www.hotelvistaragrand.com/img/logo.png',
     testimonial:
-      'Creatorinn has significantly streamlined our marketing efforts, leading to increased efficiency and better results for Shyam Machine House.',
-    image: 'https://randomuser.me/api/portraits/men/86.jpg',
+      'Working with Creatorinn was a game-changer for our promotional efforts. Their innovative strategies and expert execution significantly enhanced our online presence and brand appeal. We highly recommend their services for anyone looking to elevate their marketing.',
+    image: 'https://randomuser.me/api/portraits/men/43.jpg',
   },
   {
     name: 'Rampal Kushawah',
@@ -38,6 +37,15 @@ const testimonialsTop = [
     testimonial:
       'The support and innovative strategies from Creatorinn have been pivotal in enhancing Indus Footwear’s market presence and growth.',
     image: 'https://randomuser.me/api/portraits/men/13.jpg',
+  },
+  {
+    name: 'Yash Sharma',
+    title: 'Shyam Machine House, Founder',
+    companyLogo:
+      'https://5.imimg.com/data5/SELLER/Logo/2021/6/HE/UN/IZ/14503259/capture-120x120.PNG',
+    testimonial:
+      'Creatorinn has significantly streamlined our marketing efforts, leading to increased efficiency and better results for Shyam Machine House.',
+    image: 'https://randomuser.me/api/portraits/men/86.jpg',
   },
 ];
 

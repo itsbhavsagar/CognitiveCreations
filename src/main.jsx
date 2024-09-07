@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './components/pages/Home.jsx';
 import Services from './components/sections/Services.jsx';
-import Work from './components/sections/Work.jsx';
+import Project from './components/sections/Projects.jsx';
 import Contact from './components/sections/Contact.jsx';
 import './index.css';
 
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: '/work',
-        element: <Work />,
+        path: '/projects',
+        element: <Project />,
       },
       {
         path: '/contact',

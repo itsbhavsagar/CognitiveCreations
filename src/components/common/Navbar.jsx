@@ -104,7 +104,7 @@ const Navbar = () => {
                 className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-lime-600 font-semibold"
                 onClick={closeMenu} // Close menu on link click
               >
-                Work
+                Projects
               </Link>
             </li>
             <li className="lg:mr-12">

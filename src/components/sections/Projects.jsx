@@ -20,9 +20,9 @@ const workProjects = [
   },
   {
     id: 2,
-    title: 'Modern House Design',
+    title: 'Modern House Interior Design',
     description:
-      'A showcase of our cutting-edge residential architecture, featuring sleek, modern house designs with innovative layouts and state-of-the-art features.',
+      'Explore our expertise in modern interior design, showcasing innovative layouts, stylish furnishings, and contemporary decor that bring residential spaces to life.',
     images: [
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/aa9d26150578197.62fcca98c97ca.jpg',
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/649a8b150578197.62fcca98c49b4.jpg',
@@ -75,7 +75,7 @@ const Work = () => {
             <img
               src={project.images[0]} // Show the first image as a preview
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-fit"
             />
             <div className="p-4">
               <h2 className="text-lg font-semibold">{project.title}</h2>

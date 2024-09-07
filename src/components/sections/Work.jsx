@@ -1,151 +1,3 @@
-// // src/components/Work.jsx
-
-// import React from 'react';
-
-// const workProjects = [
-//   {
-//     id: 1,
-//     title: 'Luxury Residential Catalog',
-//     description:
-//       'Explore our luxury residential catalog, featuring stunning high-end properties with detailed presentations.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/773143206025883.66c5967a11ed9.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 2,
-//     title: 'Modern Building Showcase',
-//     description:
-//       'A showcase of modern building designs, highlighting innovative architectural styles and features.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/745631206025883.66c5967704f71.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 3,
-//     title: 'Architectural Elegance',
-//     description:
-//       'Catalog featuring elegant architectural designs, perfect for high-end real estate marketing.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/72b004206025883.66c59677054f9.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 4,
-//     title: 'Urban Design Portfolio',
-//     description:
-//       'A detailed portfolio of urban design projects, showcasing innovative and practical building solutions.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/fa094f206025883.66c5967a149fa.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 5,
-//     title: 'Contemporary Spaces',
-//     description:
-//       'Highlighting contemporary spaces with cutting-edge design and functionality.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/7470ca206025883.66c5967a1510a.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 6,
-//     title: 'Elegant Interiors',
-//     description:
-//       'Showcasing elegant interior designs that blend sophistication with modernity.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/94cc26206025883.66c5967a12f21.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 7,
-//     title: 'Innovative Facades',
-//     description:
-//       'A look at innovative building facades, emphasizing modern architectural aesthetics.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f3c0c8206025883.66c5967a13904.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 8,
-//     title: 'High-Rise Developments',
-//     description:
-//       'Featuring high-rise developments with a focus on urban living and high-quality design.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/8c658c206025883.66c5967a14096.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 9,
-//     title: 'Luxury Penthouse Designs',
-//     description:
-//       'Exclusive penthouse designs that define luxury living with unparalleled views and amenities.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d9089206025883.66c5967a1274c.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-//   {
-//     id: 10,
-//     title: 'Sustainable Building Solutions',
-//     description:
-//       'Innovative and sustainable building solutions that promote eco-friendly living.',
-//     image:
-//       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f1dff8206025883.66c5967a159c4.jpg',
-//     video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
-//   },
-// ];
-
-// const Work = () => {
-//   return (
-//     <div className="px-4 py-8 bg-gray-900 mt-20">
-//       <header className="text-center mb-12">
-//         <h1 className="text-5xl font-bold text-white mb-4">Our Work</h1>
-//         <p className="text-xl text-gray-300">
-//           Discover our diverse portfolio, featuring exceptional design and
-//           innovative solutions.
-//         </p>
-//       </header>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-//         {workProjects.map((project) => (
-//           <div
-//             key={project.id}
-//             className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl relative group"
-//           >
-//             <div className="relative">
-//               <img
-//                 src={project.image}
-//                 alt={project.title}
-//                 className="w-full h-64 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-//               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-//               <div className="absolute bottom-0 p-4 text-white bg-gradient-to-t from-black via-transparent to-transparent w-full">
-//                 <h2 className="text-lg font-semibold">{project.title}</h2>
-//               </div>
-//             </div>
-//             <div className="p-4">
-//               <p className="text-gray-800 mb-4">{project.description}</p>
-//               <div className="relative pt-9/16">
-//                 <iframe
-//                   className="absolute top-0 left-0 w-full h-full"
-//                   src={project.video}
-//                   title={`Video for ${project.title}`}
-//                   frameBorder="0"
-//                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//                   allowFullScreen
-//                 ></iframe>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Work;
-
-// src/components/Work.jsx
-
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -163,15 +15,29 @@ const workProjects = [
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/72b004206025883.66c59677054f9.jpg',
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/fa094f206025883.66c5967a149fa.jpg',
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/7470ca206025883.66c5967a1510a.jpg',
-      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/94cc26206025883.66c5967a12f21.jpg',
-      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f3c0c8206025883.66c5967a13904.jpg',
-      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/8c658c206025883.66c5967a14096.jpg',
-      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d9089206025883.66c5967a1274c.jpg',
-      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f1dff8206025883.66c5967a159c4.jpg',
     ],
-    video: 'https://www.youtube.com/embed/YOqV1B4zY5E', // Dummy video URL
+    video: 'https://www.youtube.com/embed/YOqV1B4zY5E',
+  },
+  {
+    id: 2,
+    title: 'Modern House Design',
+    description:
+      'A showcase of our cutting-edge residential architecture, featuring sleek, modern house designs with innovative layouts and state-of-the-art features.',
+    images: [
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/aa9d26150578197.62fcca98c97ca.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/649a8b150578197.62fcca98c49b4.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0bde5c150578197.62fcca98d0c4d.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/7a13b6150578197.62fcca98c218b.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/eb6e4e150578197.62fcca98d04be.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/82161d150578197.62fcca98c2958.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/ffbc31150578197.62fcca98c31fe.jpg',
+      'https://mir-s3-cdn-cf.behance.net/project_modules/1400/6ddfef150578197.62fcca98cdc30.jpg',
+    ],
+    video: 'https://www.youtube.com/embed/aP1w5G0G2L8',
   },
 ];
+
+// FUNCTIONALITY
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);

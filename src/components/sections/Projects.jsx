@@ -1,130 +1,47 @@
-import React from "react";
+import React from 'react';
 
 const Projects = () => {
   return (
     <div>
-      <section className="bg-white py-6 sm:py-8 lg:py-12">
-        <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-          <div className="relative mb-10 pt-8 md:mb-16">
-            <h2 className="mb-4 text-center font-serif text-3xl font-bold text-gray-800 md:mb-6 md:text-4xl">
-              Integration Guides
-            </h2>
-            <span className="absolute left-1/2 top-0 rounded-lg bg-cyan-400 px-2 text-white">
-              NEW
-            </span>
+      <div class="mx-auto my-10 w-screen max-w-screen-xl px-4">
+        <div class="to flex items-center rounded-xl bg-gradient-to-r from-green-400 to-blue-500 px-8 text-white shadow-lg">
+          <div class="my-10 lg:my-8 lg:w-1/2">
+            <h1 class="text-2xl font-bold">
+              Get Your Brand Seen by the Right People, in the Right Places
+            </h1>
+            <p class="mt-4 text-lg">
+              We’re on a Mission to Make Your Brand Stand Out from the Crowd.
+            </p>
+            <button
+              type="submit"
+              class="group mt-4 mr-2 mb-4 flex cursor-pointer text-left text-xl font-semibold leading-tight text-white hover:text-blue-700 hover:transition-all"
+            >
+              Get a free quote
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="group-hover:ml-8 ml-4 h-7 w-7 transition-all"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </button>
           </div>
-
-          <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 xl:grid-cols-4 xl:gap-16">
-            <article className="">
-              <a
-                className="block rounded-lg bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-400 p-2 transition hover:scale-105"
-                href="#"
-              >
-                <h2 className="mx-4 mt-4 mb-10 font-serif text-2xl font-semibold text-white">
-                  12 Ways to Utilize Zapier for Business Productivity
-                </h2>
-                <div className="flex items-center rounded-md px-4 py-3">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
-                    alt="Simon Lewis"
-                  />
-                  <p className="ml-4 w-56">
-                    <strong className="block text-lg font-medium text-white">
-                      Simon Lewis
-                    </strong>
-                    <span className="text-xs text-white">
-                      {" "}
-                      Founder of 2 Startups{" "}
-                    </span>
-                  </p>
-                </div>
-              </a>
-            </article>
-
-            <article className="">
-              <a
-                className="block rounded-lg bg-gradient-to-r from-blue-500 via-sky-400 to-cyan-400 p-2 transition hover:scale-105"
-                href="#"
-              >
-                <h2 className="mx-4 mt-4 mb-10 font-serif text-2xl font-semibold text-white">
-                  12 Ways to Utilize Zapier for Business Productivity
-                </h2>
-                <div className="flex items-center rounded-md px-4 py-3">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
-                    alt="Simon Lewis"
-                  />
-                  <p className="ml-4 w-56">
-                    <strong className="block text-lg font-medium text-white">
-                      Simon Lewis
-                    </strong>
-                    <span className="text-xs text-white">
-                      {" "}
-                      Founder of 2 Startups{" "}
-                    </span>
-                  </p>
-                </div>
-              </a>
-            </article>
-
-            <article className="">
-              <a
-                className="block rounded-lg bg-gradient-to-r from-purple-500 via-indigo-400 to-indigo-400 p-2 transition hover:scale-105"
-                href="#"
-              >
-                <h2 className="mx-4 mt-4 mb-10 font-serif text-2xl font-semibold text-white">
-                  12 Ways to Utilize Zapier for Business Productivity
-                </h2>
-                <div className="flex items-center rounded-md px-4 py-3">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
-                    alt="Simon Lewis"
-                  />
-                  <p className="ml-4 w-56">
-                    <strong className="block text-lg font-medium text-white">
-                      Simon Lewis
-                    </strong>
-                    <span className="text-xs text-white">
-                      {" "}
-                      Founder of 2 Startups{" "}
-                    </span>
-                  </p>
-                </div>
-              </a>
-            </article>
-
-            <article className="">
-              <a
-                className="block rounded-lg bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-400 p-2 transition hover:scale-105"
-                href="#"
-              >
-                <h2 className="mx-4 mt-4 mb-10 font-serif text-2xl font-semibold text-white">
-                  12 Ways to Utilize Zapier for Business Productivity
-                </h2>
-                <div className="flex items-center rounded-md px-4 py-3">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover"
-                    src="https://componentland.com/images/oPf2b7fqx5xa3mo68dYHo.png"
-                    alt="Simon Lewis"
-                  />
-                  <p className="ml-4 w-56">
-                    <strong className="block text-lg font-medium text-white">
-                      Simon Lewis
-                    </strong>
-                    <span className="text-xs text-white">
-                      {" "}
-                      Founder of 2 Startups{" "}
-                    </span>
-                  </p>
-                </div>
-              </a>
-            </article>
+          <div class="hidden h-72 w-1/2 flex-shrink-0 justify-center lg:flex">
+            <img
+              class=""
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2e53eb139149265.6265e20ba4765.jpg"
+              alt=""
+            />
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

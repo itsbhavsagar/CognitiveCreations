@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Projects = () => {
+const CallToAction = () => {
   return (
     <div>
       <div class="mx-auto my-10 w-screen max-w-screen-xl px-4">
@@ -46,4 +46,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default CallToAction;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialCard = ({ name, title, companyLogo, testimonial, image }) => {
   return (
-    <div className="flex flex-col bg-slate-50 rounded-lg p-6 shadow-lg w-96 flex-shrink-0 mx-4 my-2 transition-transform transform hover:scale-105">
+    <div className="flex flex-col mb-6 bg-slate-50 rounded-lg p-6 shadow-lg w-96 flex-shrink-0 mx-4 my-2 transition-transform transform hover:scale-105 ">
       {/* Top Section: Image, Name, and Company Logo */}
       <div className="flex items-center mb-4">
         <img

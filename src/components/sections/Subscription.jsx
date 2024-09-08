@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Subscription = () => {
   return (
@@ -34,9 +34,9 @@ const Subscription = () => {
           {/* Card 1 */}
           <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <img
-              src="https://cdn.sanity.io/images/k0dlbavy/production/0a8b3a04db528994ac1f0a0f4a14ba4f97d87d21-1360x1360.png?w=1360&auto=format"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/2d0e1685910659.5d92ddcf3c1eb.jpg"
               alt="Our Approach"
-              className="w-full h-48 object-contain"
+              className="w-full h-48 object-cover"
             />
             <div className="p-6">
               <p className="mb-1 font-medium uppercase text-orange-500">
@@ -69,9 +69,9 @@ const Subscription = () => {
           {/* Card 2 */}
           <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <img
-              src="https://i0.wp.com/i.pinimg.com/originals/90/5b/0f/905b0f2d9ee22e1fd2401c92a4f95755.jpg?resize=160,120"
+              src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200_webp/5abf7a203456277.66979d100415d.png"
               alt="Our Vision"
-              className="w-full h-48 object-fit"
+              className="w-full h-48 object-cover"
             />
             <div className="p-6">
               <p className="mb-1 font-medium uppercase text-orange-500">

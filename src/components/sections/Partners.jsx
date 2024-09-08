@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../../../src/animation.css';
-import '../../index.css';
 
 // Dynamically import all logos
 const logos = import.meta.glob('/src/assets/images/partner_logos/*.png', {
@@ -33,7 +31,7 @@ const formatNumber = (number) => {
 const Partners = () => {
   const partners = generateLogos();
   const shuffledPartners = shuffleArray(partners);
-  const totalPartners = partners.length; // Get the actual number of partners
+  const totalPartners = partners.length;
 
   // Dynamic counts
   const [businessCount, setBusinessCount] = useState(0);
@@ -41,8 +39,8 @@ const Partners = () => {
 
   useEffect(() => {
     // Business Count Animation
-    const targetBusinessCount = 100; // or any number you'd like
-    const businessDuration = 2000; // duration in milliseconds
+    const targetBusinessCount = 100;
+    const businessDuration = 2000;
     const businessIncrement = Math.ceil(
       targetBusinessCount / (businessDuration / 50)
     );
@@ -58,8 +56,8 @@ const Partners = () => {
     }, 50);
 
     // Partner Count Animation
-    const targetPartnerCount = totalPartners; // Use the actual number of partners
-    const partnerDuration = 2000; // duration in milliseconds
+    const targetPartnerCount = totalPartners;
+    const partnerDuration = 2000;
     const partnerIncrement = Math.ceil(
       targetPartnerCount / (partnerDuration / 50)
     );
@@ -83,11 +81,7 @@ const Partners = () => {
 
   return (
     <section className="py-8 bg-gray-100 overflow-hidden">
-      <div className="containe w-full mx-auto px-6 text-center">
-        {/* <h2 className="text-4xl  font-extrabold mb-6 text-gray-700">
-          BRANDS WE PARTNER WITH
-        </h2> */}
-
+      <div className="container w-full mx-auto px-6 text-center">
         <h2
           className="text-4xl font-serif font-extrabold mb-6 text-gray-700"
           style={{ fontFamily: 'GameOfSquids' }}
@@ -112,22 +106,24 @@ const Partners = () => {
         {/* Scrolling Logos */}
         <div className="relative overflow-hidden py-4">
           <div className="scroll-left">
-            {[...shuffledPartners, ...shuffledPartners].map(
-              (partner, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 mx-4"
-                  style={{ width: '50px' }}
-                >
-                  <img
-                    src={partner.src}
-                    alt={partner.alt}
-                    className="w-full h-auto object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              )
-            )}
+            <div className="scroll-left-inner">
+              {[...shuffledPartners, ...shuffledPartners].map(
+                (partner, index) => (
+                  <div
+                    key={partner.src}
+                    className="flex-shrink-0 mx-4"
+                    style={{ width: '50px' }}
+                  >
+                    <img
+                      src={partner.src}
+                      alt={partner.alt}
+                      className="w-full h-auto object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                )
+              )}
+            </div>
           </div>
         </div>
       </div>

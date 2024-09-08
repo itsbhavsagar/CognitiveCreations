@@ -1,4 +1,4 @@
-/* animations.css */
+/* animation.css */
 
 @keyframes scrollLeft {
   0% {
@@ -12,5 +12,10 @@
 .scroll-left {
   display: flex;
   white-space: nowrap;
-  animation: scrollLeft 10s linear infinite;
+  overflow: hidden;
+}
+
+.scroll-left-inner {
+  display: flex;
+  animation: scrollLeft 1000s linear infinite;
 }

@@ -68,7 +68,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/about-us"
                   >
                     About Us
@@ -76,7 +76,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/careers"
                   >
                     Careers
@@ -84,7 +84,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/team"
                   >
                     Meet the Team
@@ -92,7 +92,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/blog"
                   >
                     Blog
@@ -100,7 +100,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/case-studies"
                   >
                     Case Studies
@@ -116,7 +116,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/seo-services"
                   >
                     SEO Services
@@ -124,7 +124,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/content-marketing"
                   >
                     Content Marketing
@@ -132,7 +132,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/ppc-advertising"
                   >
                     PPC Advertising
@@ -140,7 +140,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/social-media-management"
                   >
                     Social Media Management
@@ -148,7 +148,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/email-marketing"
                   >
                     Email Marketing
@@ -164,7 +164,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/resources/guides"
                   >
                     Guides & Tutorials
@@ -172,7 +172,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/resources/webinars"
                   >
                     Webinars
@@ -180,15 +180,15 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
-                    href="/resources/ebooks"
+                    className="hover:text-yellow-500 transition-colors"
+                    href="/resources/careers"
                   >
-                    eBooks
+                    Careers
                   </a>
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/resources/white-papers"
                   >
                     White Papers
@@ -196,7 +196,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                     href="/newsletter"
                   >
                     Newsletter
@@ -207,14 +207,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center -mt-10 mb-5 py-2">
-          <a
-            href="/contact-us"
-            className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-full text-lg font-semibold shadow-lg transition-transform transform hover:scale-105"
-          >
-            Contact Us
-          </a>
-        </div>
+        {/* Bottom section */}
 
         <div className="border-t border-gray-700 py-6">
           <div className="mx-auto max-w-screen-xl px-6 text-center text-gray-400 sm:flex sm:justify-between">
@@ -222,25 +215,26 @@ const Footer = () => {
               © 2024 Creatorinn | All Rights Reserved
             </p>
             <p className="order-1 sm:order-2">
-              Made with ❤️ in 🇮🇳 by Creatorinn
+              Made with ❤️ in 🇮🇳 by{' '}
+              <span className="font-bold">Creatorinn</span>
             </p>
             <p className="order-3 mt-4 sm:order-3 sm:mt-0">
               <a
-                className="hover:text-lime-400 transition-colors"
+                className="hover:text-yellow-500 transition-colors"
                 href="/privacy-policy"
               >
                 Privacy Policy
               </a>
               <span className="mx-2">|</span>
               <a
-                className="hover:text-lime-400 transition-colors"
+                className="hover:text-yellow-500 transition-colors"
                 href="/terms-of-service"
               >
                 Terms of Service
               </a>
               <span className="mx-2">|</span>
               <a
-                className="hover:text-lime-400 transition-colors"
+                className="hover:text-yellow-500 transition-colors"
                 href="/sitemap"
               >
                 Sitemap

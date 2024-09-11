@@ -10,7 +10,7 @@ export default {
         },
       },
       animation: {
-        'scroll-right': 'scrollRight 20s linear infinite', // Adjust duration as needed
+        'scroll-right': 'scrollRight 8s linear infinite', // Adjust duration as needed
       },
     },
   },

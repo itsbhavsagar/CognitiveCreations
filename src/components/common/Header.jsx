@@ -16,7 +16,7 @@ const Header = () => {
                     fill="currentColor"
                   >
                     <path
-                      fillRule="evenodd"
+                      fill-rule="evenodd"
                       d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
                       clipRule="evenodd"
                     />
@@ -38,25 +38,21 @@ const Header = () => {
                 </p>
               </div>
               <div className="mt-10 flex flex-col items-center md:flex-row">
-                {/* <a
-                  href="/"
-                  className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-gradient-to-r from-green-400 to-blue-500 px-6 font-medium tracking-wide text-white shadow-md md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800 transition duration-200 hover:scale-110"
-                >
-                  Request A Quote{" "}
-                </a> */}{" "}
+             
                 <a
-                  href="#"
+                  href="/contact"
                   className="my-2 inline-flex cursor-pointer items-center rounded-full  bg-gradient-to-r from-green-400 to-blue-500 border-4 h-12 hover:translate-y-1 hover:shadow-lg hover:scale-105 shadow-md transition border-white font-serif  text-white py-3 font-b px-6  text-xl "
                 >
                   Request a Quote{" "}
                 </a>{" "}
                 <a
-                  href="/"
+                  href="/contact"
                   aria-label=""
                   className="group inline-flex items-center font-semibold md:text-gray-600 text-orange-500 ml-3"
                 >
                   {" "}
                   Watch how it works
+                  
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="group-hover:translate-x-2 ml-4 h-6 w-6 transition-transform"

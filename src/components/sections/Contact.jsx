@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import PhoneInput from "react-phone-number-input";
-import { FaUser, FaEnvelope, FaBriefcase, FaInfoCircle } from "react-icons/fa"; // Import necessary icons
-import "react-phone-number-input/style.css"; // Import styles
+import React, { useState } from 'react';
+import PhoneInput from 'react-phone-number-input';
+import { FaUser, FaEnvelope, FaBriefcase, FaInfoCircle } from 'react-icons/fa'; // Import necessary icons
+
+import 'react-phone-number-input/style.css'; // Import styles
 
 const Contact = () => {
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -15,7 +16,7 @@ const Contact = () => {
 
   // Handle blur event for the phone input
   const handleBlur = () => {
-    if (phoneNumber === "") {
+    if (phoneNumber === '') {
       setIsFocused(false);
     }
   };
@@ -23,7 +24,7 @@ const Contact = () => {
   // Handle change event for the phone input
   const handleChange = (value) => {
     setPhoneNumber(value);
-    if (value !== "") {
+    if (value !== '') {
       setIsFocused(true);
     } else {
       setIsFocused(false);
@@ -82,7 +83,7 @@ const Contact = () => {
                 <div className="mb-5 relative">
                   <PhoneInput
                     className="w-full pl-3 border-b py-3 text-sm outline-none focus:border-b-2 focus:border-black"
-                    placeholder={isFocused ? "" : "+1 (XXX) XXX-XXXX"}
+                    placeholder={isFocused ? '' : '+1 (XXX) XXX-XXXX'}
                     value={phoneNumber}
                     onChange={handleChange}
                     defaultCountry="US"

@@ -21,10 +21,10 @@ const Pricing = () => {
   };
 
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8">
-        <h1 className="text-5xl font-extrabold text-gray-900">Our Pricing Plans</h1>
-        <p className="text-gray-600 mt-4 text-lg">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">Our Pricing Plans</h1>
+        <p className="text-gray-600 mt-4 text-md sm:text-lg">
           Choose the plan that's right for your business needs.
         </p>
       </div>
@@ -39,9 +39,9 @@ const Pricing = () => {
               className="sr-only"
               onChange={toggleBillingCycle}
             />
-            <div className="block bg-gray-300 w-14 h-8 rounded-full"></div>
+            <div className="block bg-gray-300 w-12 h-6 rounded-full"></div>
             <div
-              className={`absolute top-0 left-0 w-8 h-8 bg-blue-600 rounded-full transition-transform ${
+              className={`absolute top-0 left-0 w-6 h-6 bg-blue-600 rounded-full transition-transform ${
                 billingCycle === "yearly" ? "translate-x-6" : ""
               }`}
             ></div>
@@ -51,18 +51,18 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Basic Plan */}
         <div className="border rounded-lg shadow-xl hover:shadow-2xl transition-shadow p-8 bg-white relative">
-          <h2 className="text-2xl font-bold text-center bg-gradient-to-r from-blue-500 to-teal-400 text-white p-4 rounded-t-lg">
+          <h2 className="text-xl sm:text-2xl font-bold text-center bg-gradient-to-r from-blue-500 to-teal-400 text-white p-4 rounded-t-lg">
             Basic
           </h2>
           <p className="text-gray-600 text-center mt-4">
             Ideal for small businesses just starting out.
           </p>
-          <div className="text-5xl font-extrabold text-center my-6">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center my-6">
             ${billingCycle === "monthly" ? pricingData.monthly.basic : pricingData.yearly.basic}
-            <span className="text-lg">/{billingCycle}</span>
+            <span className="text-base sm:text-lg">/{billingCycle}</span>
           </div>
           <ul className="text-gray-700 space-y-3 mb-6">
             <li className="flex items-center">
@@ -80,20 +80,20 @@ const Pricing = () => {
           </button>
         </div>
 
-        {/* Standard Plan (Highlighted as most popular) */}
+        {/* Standard Plan */}
         <div className="border-2 border-blue-500 rounded-lg shadow-xl hover:shadow-2xl transition-shadow p-8 bg-white relative">
           <div className="absolute top-0 right-0 mt-4 mr-4 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full">
             Most Popular
           </div>
-          <h2 className="text-2xl font-bold text-center bg-gradient-to-r from-purple-500 to-pink-400 text-white p-4 rounded-t-lg">
+          <h2 className="text-xl sm:text-2xl font-bold text-center bg-gradient-to-r from-purple-500 to-pink-400 text-white p-4 rounded-t-lg">
             Standard
           </h2>
           <p className="text-gray-600 text-center mt-4">
             Perfect for growing businesses looking to scale.
           </p>
-          <div className="text-5xl font-extrabold text-center my-6">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center my-6">
             ${billingCycle === "monthly" ? pricingData.monthly.standard : pricingData.yearly.standard}
-            <span className="text-lg">/{billingCycle}</span>
+            <span className="text-base sm:text-lg">/{billingCycle}</span>
           </div>
           <ul className="text-gray-700 space-y-3 mb-6">
             <li className="flex items-center">
@@ -113,15 +113,15 @@ const Pricing = () => {
 
         {/* Premium Plan */}
         <div className="border rounded-lg shadow-xl hover:shadow-2xl transition-shadow p-8 bg-white relative">
-          <h2 className="text-2xl font-bold text-center bg-gradient-to-r from-green-500 to-blue-400 text-white p-4 rounded-t-lg">
+          <h2 className="text-xl sm:text-2xl font-bold text-center bg-gradient-to-r from-green-500 to-blue-400 text-white p-4 rounded-t-lg">
             Premium
           </h2>
           <p className="text-gray-600 text-center mt-4">
             Comprehensive services for large-scale businesses.
           </p>
-          <div className="text-5xl font-extrabold text-center my-6">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center my-6">
             ${billingCycle === "monthly" ? pricingData.monthly.premium : pricingData.yearly.premium}
-            <span className="text-lg">/{billingCycle}</span>
+            <span className="text-base sm:text-lg">/{billingCycle}</span>
           </div>
           <ul className="text-gray-700 space-y-3 mb-6">
             <li className="flex items-center">

@@ -4,6 +4,7 @@ import Partners from '../sections/Partners';
 import Subscription from '../sections/Subscription';
 import CTA from '../sections/CallToAction';
 import TestimonialList from '../sections/TestimonialList';
+import Pricing from '../sections/Pricing';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Subscription />
       <TestimonialList />
       <CTA />
+      <Pricing/>
     </div>
   );
 };

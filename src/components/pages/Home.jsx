@@ -20,6 +20,7 @@ const Home = () => {
         <meta property="og:image" content="https://www.creatorinn.com/" />
         <meta property="og:url" content="https://www.creatorinn.com/" />
         <meta property="og:type" content="website" />
+        <meta name="google-site-verification" content="zyFOctCLqjv6gzZ3PZKGSpOsOkIKwaktANSIPMLr248" />
       
       </Helmet>
       <Header />

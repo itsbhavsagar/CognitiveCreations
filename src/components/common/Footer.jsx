@@ -216,7 +216,7 @@ const Footer = () => {
             </p>
             <p className="order-1 sm:order-2">
               Made with ❤️ in 🇮🇳 by{' '}
-              <span className="font-bold">Creatorinn</span>
+              <span className="font-bold">BHAVSAGAR</span>
             </p>
             <p className="order-3 mt-4 sm:order-3 sm:mt-0">
               <a
